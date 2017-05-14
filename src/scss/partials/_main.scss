@@ -1,0 +1,81 @@
+$backgroundColor-Grey: #EDEDED;
+
+//$align-center{
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//}
+.main {
+  p {
+    font-size: 1.3em;
+    line-height: 2;
+  }
+  #first-wrapper {
+    margin: 40px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+  .section .section-banner .section-center {
+    text-align: center;
+  }
+  .section-banner {
+    padding: 20px 0 0;
+    background-color: #e5e5e5;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  article {
+    display: block;
+  }
+  .gallery {
+    //color: $colorTxt-white;
+    margin: 4em 0;
+    padding: 0;
+    list-style: none;
+    overflow: visible;
+    display: block;
+    width: 100%;
+    float: left;
+  }
+  .gallery .item {
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 0.3125rem;
+    padding-left: 0.3125rem;
+  }
+  #main-wrapper {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #banner {
+    //height: 15vh;
+    background-color: $backgroundColor-Grey;
+    overflow: auto;
+  }
+  #intro-page {
+    //height: 50vh;
+    background: url("https://startacus.net/uploads/image/Web%20summit%20100000000.jpg");
+    position: relative;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #map {
+    height: 400px;
+    width: 100%;
+  }
+
+  .item {
+    h4{
+      font-size: 2em;
+      color: #422F85;
+    }
+  }
+}

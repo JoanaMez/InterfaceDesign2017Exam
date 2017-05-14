@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  //src: url('../fonts/font-name.eot');
+  //src: url('../fonts/font-name.eot?#iefix') format('embedded-opentype'),
+  //     url('../fonts/font-name.woff') format('woff'),
+  //     url('../fonts/font-name.ttf') format('truetype'),
+  //     url('../fonts/font-name.svg#font-name') format('svg');
+
+  font-weight: normal;
+  font-style: normal;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto', sans-serif;
+}
+//variables
+$colorTxtWhite:#fff;
+$colorTxtDarkGrey: #4e4e4e;
+$colorTxtDarkPurple: #422F85;
+
+
+$fontSizeMedium: 30px;
+$fontSizeSmall: 18px;
+$fontSizeBig: 48px;
+
+$txtAlign-center:center;
+
+.gallery{
+  color: $colorTxtDarkGrey;
+
+}
+.itemHead{
+  font-size: $fontSizeSmall ;
+  font-weight: normal;
+}
+.itemOutput{
+  font-size: $fontSizeMedium;
+  color: $colorTxtDarkPurple;
+}
+.section-title{
+  font-size: $fontSizeBig ;
+  color: $colorTxtDarkGrey;
+
+}
+.intro{
+  color:$colorTxtWhite ;
+}
+.txt-light{
+  color: $colorTxtWhite;
+}
+.centered{
+  width: 100%;
+  text-align: $txtAlign-center;
+}
+.section-title{
+  text-align:$txtAlign-center; ;
+}
