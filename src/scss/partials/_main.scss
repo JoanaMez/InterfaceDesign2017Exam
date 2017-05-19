@@ -1,5 +1,5 @@
 $backgroundColor-Grey: #EDEDED;
-
+$colorOrange:#ff8a30;
 //$align-center{
 //  display: flex;
 //  align-items: center;
@@ -24,12 +24,15 @@ $backgroundColor-Grey: #EDEDED;
     background-color: #e5e5e5;
   }
   .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1100px;
+    margin: 0 auto;
+
   }
   article {
     display: block;
+  }
+  .with-padding{
+    padding: 20em 0;
   }
   .gallery {
     //color: $colorTxt-white;
@@ -78,4 +81,137 @@ $backgroundColor-Grey: #EDEDED;
       color: #422F85;
     }
   }
+
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 2em;
+    text-align: center;
+    display: inline-block;
+
+    .card-content{
+      padding-bottom: 1em;
+    }
+
+  }
+
+  .card-container  {
+    padding: 0 16px;
+    align-content: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    /* You can set flex-wrap and flex-direction individually */
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* Or do it all in one line with flex flow */
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    /* tweak the where items line up on the row */
+    /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+    -webkit-align-content: flex-end;
+    align-content: flex-end;
+  }
+
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .btn-aligner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .button-item{
+      align-self: flex-start;
+      background-color: $colorOrange;
+      border-radius: 4px;
+      padding: 9px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  .nameTag{
+    background-color: #ff8a30;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+  }
+
+  .sponsor-container{
+    padding: 0 16px;
+    align-content: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    /* You can set flex-wrap and flex-direction individually */
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* Or do it all in one line with flex flow */
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    /* tweak the where items line up on the row */
+    /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+    -webkit-align-content: flex-end;
+    align-content: flex-end;
+  }
+
+  .partner-container{
+    padding: 0 16px;
+    align-content: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    /* You can set flex-wrap and flex-direction individually */
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* Or do it all in one line with flex flow */
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    /* tweak the where items line up on the row */
+    /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+    -webkit-align-content: flex-end;
+    align-content: flex-end;
+  }
+
 }

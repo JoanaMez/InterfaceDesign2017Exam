@@ -203,7 +203,6 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -332,8 +331,6 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -430,9 +427,7 @@ nav {
     nav ul li {
       float: left; }
   nav .ulAnim * {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease; }
   nav .ulAnim a {
     padding: 0 0.6em;
@@ -444,7 +439,6 @@ nav {
     height: 0;
     position: absolute;
     content: '';
-    -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
     background-color: #ff8a30; }
   nav .ulAnim a:before {
@@ -495,22 +489,30 @@ nav {
 .main p {
   font-size: 1.3em;
   line-height: 2; }
+
 .main #first-wrapper {
   margin: 40px auto;
   max-width: 650px;
   line-height: 1.6;
   padding: 0 10px; }
+
 .main .section .section-banner .section-center {
   text-align: center; }
+
 .main .section-banner {
   padding: 20px 0 0;
   background-color: #e5e5e5; }
+
 .main .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto; }
+  max-width: 1100px;
+  margin: 0 auto; }
+
 .main article {
   display: block; }
+
+.main .with-padding {
+  padding: 20em 0; }
+
 .main .gallery {
   margin: 4em 0;
   padding: 0;
@@ -519,36 +521,169 @@ nav {
   display: block;
   width: 100%;
   float: left; }
+
 .main .gallery .item {
   width: 20%;
   float: left;
   box-sizing: border-box;
   padding-right: 0.3125rem;
   padding-left: 0.3125rem; }
+
 .main #main-wrapper {
   width: 900px;
   margin-left: auto;
   margin-right: auto; }
+
 .main #banner {
   background-color: #EDEDED;
   overflow: auto; }
+
 .main #intro-page {
   background: url("https://startacus.net/uploads/image/Web%20summit%20100000000.jpg");
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+
 .main #map {
   height: 400px;
   width: 100%; }
+
 .main .item h4 {
   font-size: 2em;
   color: #422F85; }
+
+.main .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 2em;
+  text-align: center;
+  display: inline-block; }
+  .main .card .card-content {
+    padding-bottom: 1em; }
+
+.main .card-container {
+  padding: 0 16px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  /* You can set flex-wrap and flex-direction individually */
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* Or do it all in one line with flex flow */
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  /* tweak the where items line up on the row */
+  /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+  -ms-flex-line-pack: end;
+      align-content: flex-end; }
+
+.main .title {
+  color: grey;
+  font-size: 18px; }
+
+.main button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px; }
+
+.main .btn-aligner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .main .btn-aligner .button-item {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    background-color: #ff8a30;
+    border-radius: 4px;
+    padding: 9px; }
+
+.main a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black; }
+
+.main button:hover, .main a:hover {
+  opacity: 0.7; }
+
+.main .nameTag {
+  background-color: #ff8a30;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  font-size: 18px; }
+
+.main .sponsor-container {
+  padding: 0 16px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  /* You can set flex-wrap and flex-direction individually */
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* Or do it all in one line with flex flow */
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  /* tweak the where items line up on the row */
+  /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+  -ms-flex-line-pack: end;
+      align-content: flex-end; }
+
+.main .partner-container {
+  padding: 0 16px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  /* You can set flex-wrap and flex-direction individually */
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* Or do it all in one line with flex flow */
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  /* tweak the where items line up on the row */
+  /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+  -ms-flex-line-pack: end;
+      align-content: flex-end; }
 
 @font-face {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   font-style: normal; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif; }
 
@@ -580,6 +715,11 @@ h1, h2, h3, h4, h5, h6 {
 .section-title {
   text-align: center; }
 
+::-moz-selection {
+  background: #333;
+  color: #fff;
+  text-shadow: none; }
+
 ::selection {
   background: #333;
   color: #fff;
@@ -594,6 +734,25 @@ h1, h2, h3, h4, h5, h6 {
   background: #333;
   color: #fff;
   text-shadow: none; }
+
+.card-container {
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.cards {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 15px;
+  padding: 1.5%;
+  box-sizing: border-box; }
+
+@media (max-width: 700px) {
+  .card {
+    width: 100%; } }
 
 body::-webkit-scrollbar {
   width: .5em; }
@@ -611,37 +770,28 @@ body::-webkit-scrollbar-thumb {
     color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important; }
-
   a,
   a:visited {
     text-decoration: underline; }
-
   a[href]:after {
     content: " (" attr(href) ")"; }
-
   abbr[title]:after {
     content: " (" attr(title) ")"; }
-
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: ""; }
-
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
-
   thead {
     display: table-header-group; }
-
   tr,
   img {
     page-break-inside: avoid; }
-
   img {
     max-width: 100% !important; }
-
   @page {
     margin: 0.5cm; }
   p,
@@ -649,9 +799,6 @@ body::-webkit-scrollbar-thumb {
   h3 {
     orphans: 3;
     widows: 3; }
-
   h2,
   h3 {
     page-break-after: avoid; } }
-
-/*# sourceMappingURL=style.css.map */
