@@ -22,6 +22,30 @@
     $(function () { $("#sponsors").load("components/sponsors.html"); });
     $(function () { $("#footer").load("components/footer.html"); });
 
+    $( window ).load(function() {
+      $('.counter').each(function() {
+        var $this = $(this),
+          countTo = $this.attr('data-count');
+
+        $this.text('0');
+
+        console.log(countTo);
+        $({ countNum: $this.text()}).animate({
+            countNum: countTo
+          },
+          {
+            duration: 2500,
+            easing:'linear',
+            step: function() {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function() {
+              $this.text(this.countNum);
+              console.log('finished');
+            }
+          });
+      });
+    });
 
   });
 
