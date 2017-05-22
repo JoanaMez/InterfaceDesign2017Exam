@@ -503,6 +503,34 @@ nav {
   padding: 20px 0 0;
   background-color: #e5e5e5; }
 
+.main .social-section-banner {
+  background-color: #ff8a30; }
+  .main .social-section-banner a, .main .social-section-banner p {
+    color: white; }
+
+.main .social-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .main .social-wrapper .suscribe-icon {
+    float: left;
+    margin: 2em; }
+  .main .social-wrapper .social-icon {
+    margin-left: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: center;
+        align-items: center; }
+    .main .social-wrapper .social-icon p {
+      padding: 1em; }
+    .main .social-wrapper .social-icon a {
+      padding: 0.4em; }
+
 .main .container {
   max-width: 1100px;
   margin: 0 auto; }
@@ -540,6 +568,12 @@ nav {
 
 .main #intro-page {
   background: url("https://startacus.net/uploads/image/Web%20summit%20100000000.jpg");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.main #intro-page-schedule {
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -678,6 +712,91 @@ nav {
   /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
   -ms-flex-line-pack: end;
       align-content: flex-end; }
+
+.main .section-title-inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center; }
+  .main .section-title-inner .section-title-inner-content {
+    padding: 3em; }
+    .main .section-title-inner .section-title-inner-content p {
+      line-height: 2.2em; }
+    .main .section-title-inner .section-title-inner-content h2 {
+      padding-bottom: 1em; }
+
+.main .event-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  margin: 2em;
+  box-shadow: 4px 4px 20px #EDEDED; }
+  .main .event-wrapper .side-calendar-medium {
+    padding: 1em;
+    background-color: #ff8a30;
+    color: white; }
+  .main .event-wrapper .side-calendar-beginner {
+    padding: 1em;
+    background-color: grey;
+    color: white; }
+  .main .event-wrapper .side-calendar-advanced {
+    padding: 1em;
+    background-color: #422F85;
+    color: white; }
+  .main .event-wrapper .event-image {
+    padding: 1em;
+    background-color: #EDEDED; }
+  .main .event-wrapper .event-content-inner {
+    padding: 1em; }
+  .main .event-wrapper .event-title {
+    font-size: 24px; }
+  .main .event-wrapper .icon {
+    float: left; }
+  .main .event-wrapper .event-content-inner {
+    width: 80%;
+    float: left;
+    max-height: 242px; }
+  .main .event-wrapper .side-button {
+    width: 16%;
+    float: right;
+    text-align: center;
+    margin-top: 9.9em;
+    margin-right: 20px;
+    border: 2px solid;
+    color: #ff8a30; }
+
+.main h2, .main p {
+  padding-left: 2em; }
+
+.footer-wrapper {
+  background-color: #422F85;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 4em; }
+  .footer-wrapper .footer-content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: start;
+        justify-content: flex-start; }
+  .footer-wrapper .footer-content p {
+    color: white; }
+  .footer-wrapper .footer-content .email {
+    color: #ff8a30;
+    text-decoration: none; }
+  .footer-wrapper .social-icon-footer p {
+    color: white;
+    margin-bottom: 1em; }
+  .footer-wrapper .social-icon-footer a {
+    color: #ff8a30; }
 
 @font-face {
   font-family: 'Open Sans', sans-serif;

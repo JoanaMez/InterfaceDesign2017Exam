@@ -13,6 +13,7 @@
     $(function () { $("#tickets").load("components/tickets.html"); });
     $(function () { $("#sponsors").load("components/sponsors.html"); });
     $(function () { $("#footer").load("components/footer.html"); });
+    $(function () { $("#social-banner").load("components/social-banner.html"); });
 
     $( window ).load(function() {
       $('.counter').each(function() {
