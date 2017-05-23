@@ -344,4 +344,19 @@ $colorDarkPurple:#422F85;
     padding-left:2em ;
   }
 
+
+  ////////Team/////////
+
+
+    .team-wrapper-up{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+    }
+
+
+
 }

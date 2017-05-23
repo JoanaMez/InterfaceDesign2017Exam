@@ -22,6 +22,7 @@
     $(function () { $("#sponsors").load("components/sponsors.html"); });
     $(function () { $("#footer").load("components/footer.html"); });
     $(function () { $("#social-banner").load("components/social-banner.html"); });
+    $(function () { $("#team").load("components/team.html"); });
 
     $( window ).load(function() {
       $('.counter').each(function() {

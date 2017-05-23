@@ -775,6 +775,14 @@ nav {
 .main h2, .main p {
   padding-left: 2em; }
 
+.main .team-wrapper-up {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
+
 .footer-wrapper {
   background-color: #422F85;
   font-size: 18px;
