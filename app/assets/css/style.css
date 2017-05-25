@@ -420,9 +420,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  padding: 2.5em 0; }
   header .logo {
-    width: 200px; }
+    width: 200px;
+    padding-top: .3em; }
 
 nav {
   display: -ms-flexbox;
@@ -578,7 +580,7 @@ nav {
   background-color: #e5e5e5; }
 
 .main .social-section-banner {
-  background-color: #ff8a30; }
+  background-color: #422F85; }
   .main .social-section-banner a, .main .social-section-banner p {
     color: white; }
 
@@ -637,11 +639,13 @@ nav {
   overflow: auto; }
 
 .main #intro-page {
-  background: url("https://startacus.net/uploads/image/Web%20summit%20100000000.jpg");
+  background: url("../img/intro3.jpg");
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+  .main #intro-page #intro-page-color-bg {
+    background-color: rgba(255, 255, 255, 0.5); }
 
 .main #map {
   height: 400px;
@@ -650,6 +654,9 @@ nav {
 .main .item h4 {
   font-size: 2em;
   color: #422F85; }
+
+.main .item .section-content-centered-inner h1 {
+  color: #4e4e4e; }
 
 .main .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -715,11 +722,7 @@ nav {
 
 .main a {
   text-decoration: none;
-  font-size: 22px;
-  color: #808080; }
-
-.main button:hover, .main a:hover {
-  opacity: 0.7; }
+  font-size: 22px; }
 
 .main .nameTag {
   background-color: #ff8a30;
@@ -801,6 +804,13 @@ nav {
   -ms-flex-pack: start;
       justify-content: flex-start; }
 
+.main .large-txt {
+  font-size: 4em; }
+
+.main .orange-txt {
+  color: black;
+  font-weight: bold; }
+
 footer {
   background-color: #422F85;
   color: white; }
@@ -824,6 +834,56 @@ footer {
 .btn {
   padding: 10px 0;
   width: 200px; }
+
+.snip1582 {
+  background-color: #ff8a30;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  font-size: 22px;
+  line-height: 1em;
+  margin: 15px 40px;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.snip1582:before,
+.snip1582:after {
+  border-color: transparent;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px; }
+
+.snip1582:before {
+  border-color: #ff8a30;
+  border-top-width: 2px;
+  left: 0px;
+  top: -5px; }
+
+.snip1582:after {
+  border-bottom-width: 2px;
+  border-color: #ff8a30;
+  bottom: -5px;
+  right: 0px; }
+
+.snip1582:hover,
+.snip1582.hover {
+  background-color: #ff8a30; }
+
+.snip1582:hover:before,
+.snip1582.hover:before,
+.snip1582:hover:after,
+.snip1582.hover:after {
+  height: 100%;
+  width: 100%; }
 
 @font-face {
   font-family: 'Open Sans', sans-serif;
@@ -899,6 +959,76 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 700px) {
   .card {
     width: 100%; } }
+
+#tickets-wrap div {
+  background: #333;
+  height: 180px;
+  position: relative;
+  width: 500px;
+  margin: 1em auto; }
+
+#tickets-wrap div:before {
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 500px 0 0 0 #fff, 0 180px 0 0 #fff, 500px 180px 0 0 #fff, 0 40px 0 -20px #fff, 0 60px 0 -20px #fff, 0 80px 0 -20px #fff, 0 100px 0 -20px #fff, 0 120px 0 -20px #fff, 0 140px 0 -20px #fff, 500px 40px 0 -20px #fff, 500px 60px 0 -20px #fff, 500px 80px 0 -20px #fff, 500px 100px 0 -20px #fff, 500px 120px 0 -20px #fff, 500px 140px 0 -20px #fff;
+  content: "";
+  display: block;
+  height: 50px;
+  left: -25px;
+  position: absolute;
+  top: -25px;
+  width: 50px; }
+
+#tickets-wrap span {
+  border-radius: 20px;
+  border: 3px solid #aaa;
+  color: #fff;
+  display: inline-block;
+  font-size: 90px;
+  left: 0;
+  left: 50%;
+  line-height: 1.5;
+  padding: 0 40px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  -ms-transform: translateY(-50%) translateX(-50%);
+      transform: translateY(-50%) translateX(-50%); }
+  #tickets-wrap span .student-ticket {
+    font-size: 6em; }
+  #tickets-wrap span .workshop-ticket {
+    font-size: 5em; }
+
+#tickets-wrap span:before,
+#tickets-wrap span:after {
+  background: #333;
+  color: #aaa;
+  display: inline-block;
+  font-size: 16px;
+  left: 50%;
+  padding: 0 10px;
+  position: absolute; }
+
+#tickets-wrap span:before {
+  content: "TECH";
+  -ms-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+  top: 0; }
+
+#tickets-wrap span:after {
+  bottom: 0;
+  content: "Events";
+  -ms-transform: translateX(-50%) translateY(50%);
+      transform: translateX(-50%) translateY(50%); }
+
+#tickets-wrap .student {
+  font-size: 4em; }
+
+#tickets-wrap .intermesdiate {
+  font-size: 3em; }
+
+#tickets-wrap .advanced {
+  font-size: 3em; }
 
 body::-webkit-scrollbar {
   width: 1em; }

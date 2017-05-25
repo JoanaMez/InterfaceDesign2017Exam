@@ -13,30 +13,29 @@
     text-align: center;
   }
 
-
   .section-banner {
     padding: 20px 0 0;
     background-color: #e5e5e5;
   }
 
-
-  .social-section-banner{
-    background-color: $colorOrange;
-    a,p {
+  .social-section-banner {
+    background-color: $colorDarkPurple;
+    a, p {
       color: white;
     }
+
   }
 
-  .social-wrapper{
+  .social-wrapper {
     display: flex;
     justify-content: space-between;
 
-    .suscribe-icon{
+    .suscribe-icon {
       float: left;
       margin: 2em;
 
     }
-    .social-icon{
+    .social-icon {
       margin-left: auto;
       display: -webkit-flex;
       display: flex;
@@ -46,10 +45,10 @@
       justify-content: flex-start;
       align-items: center;
 
-      p{
+      p {
         padding: 1em;
       }
-      a{
+      a {
         padding: 0.4em;
       }
 
@@ -57,12 +56,10 @@
 
   }
 
-
-
   article {
     display: block;
   }
-  .with-padding{
+  .with-padding {
     padding: 20em 0;
   }
   .gallery {
@@ -94,14 +91,18 @@
   }
   #intro-page {
     //height: 50vh;
-    background: url("https://startacus.net/uploads/image/Web%20summit%20100000000.jpg");
+    //background: url("http://www.goodnewsfinland.com/wp-content/uploads/2015/09/Helsinki-Zalando-opening-party.jpg");
+    background: url("../img/intro3.jpg");
+
     position: relative;
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-
+    #intro-page-color-bg {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
   }
   #map {
     height: 400px;
@@ -109,12 +110,16 @@
   }
 
   .item {
-    h4{
+    h4 {
       font-size: 2em;
       color: $colorDarkPurple;
     }
+    .section-content-centered-inner {
+      h1 {
+        color: #4e4e4e;
+      }
+    }
   }
-
 
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -123,13 +128,13 @@
     text-align: center;
     display: inline-block;
 
-    .card-content{
+    .card-content {
       padding-bottom: 1em;
     }
 
   }
 
-  .card-container  {
+  .card-container {
     padding: 0 16px;
     align-content: center;
     display: -webkit-flex;
@@ -170,11 +175,11 @@
     font-size: 18px;
   }
 
-  .btn-aligner{
+  .btn-aligner {
     display: flex;
     align-items: center;
     justify-content: center;
-    .button-item{
+    .button-item {
       align-self: flex-start;
       background-color: $colorOrange;
       border-radius: 4px;
@@ -185,13 +190,13 @@
   a {
     text-decoration: none;
     font-size: 22px;
-    color: $grey;
+    //color: $grey;
   }
 
   button:hover, a:hover {
-    opacity: 0.7;
+    //opacity: 0.7;
   }
-  .nameTag{
+  .nameTag {
     background-color: #ff8a30;
 
     display: flex;
@@ -201,7 +206,7 @@
     font-size: 18px;
   }
 
-  .sponsor-container{
+  .sponsor-container {
     padding: 0 16px;
     align-content: center;
     display: -webkit-flex;
@@ -224,7 +229,7 @@
     align-content: flex-end;
   }
 
-  .partner-container{
+  .partner-container {
     padding: 0 16px;
     align-content: center;
     display: -webkit-flex;
@@ -246,7 +251,7 @@
     -webkit-align-content: flex-end;
     align-content: flex-end;
   }
-  .section-title-inner{
+  .section-title-inner {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
@@ -254,13 +259,13 @@
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
     align-items: center;
-    .section-title-inner-content{
+    .section-title-inner-content {
       padding: 3em;
 
-      p{
+      p {
         line-height: 2.2em;
       }
-      h2{
+      h2 {
         padding-bottom: 1em;
 
       }
@@ -271,18 +276,22 @@
   //   padding-left:2em ;
   // }
 
-
   ////////Team/////////
 
+  .team-wrapper-up {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  }
 
-    .team-wrapper-up{
-      display: -webkit-flex;
-      display: flex;
-      -webkit-flex-direction: row;
-      flex-direction: row;
-      -webkit-justify-content: flex-start;
-      justify-content: flex-start;
-    }
-
-
+  .large-txt {
+  font-size: 4em;
+  }
+  .orange-txt{
+    color: black;
+    font-weight: bold;
+  }
 }

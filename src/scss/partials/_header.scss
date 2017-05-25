@@ -1,8 +1,10 @@
 header {
   display: flex;
   justify-content: space-between;
+  padding: 2.5em 0;
 
   .logo{
     width: 200px;
+    padding-top: .3em;
   }
 }
