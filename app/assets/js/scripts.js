@@ -24,6 +24,7 @@
     $(function () { $("#social-banner").load("components/social-banner.html"); });
     $(function () { $("#team").load("components/team.html"); });
     $(function () { $("#events").load("components/events.html"); });
+    $(function () { $("#events2").load("components/events.html"); });
 
     $( window ).load(function() {
       $('.counter').each(function() {

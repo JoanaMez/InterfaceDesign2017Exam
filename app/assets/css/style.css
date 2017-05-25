@@ -49,6 +49,9 @@ a {
   color: #ff8a30;
   text-decoration: none; }
 
+ul {
+  list-style: none; }
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -413,45 +416,26 @@ td,
 th {
   padding: 0; }
 
-#site-header {
-  position: relative; }
-
-.site-header {
-  padding: 0 1.25rem; }
+header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  header .logo {
+    width: 200px; }
 
 nav {
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */ }
-  nav .topnav {
-    background-color: #333;
-    overflow: hidden; }
-  nav #navigation {
-    position: relative;
-    display: inline-block;
-    float: right;
-    width: 100%; }
-  nav a {
-    display: block;
-    color: #000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    width: 100px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  nav ul li {
     float: left; }
-  nav a:hover {
-    background-color: #ddd;
-    color: black; }
-  nav .icon {
-    display: none; }
-  nav ul {
-    margin-bottom: 10px;
-    margin-top: 20px;
-    list-style: none;
-    float: right;
-    display: inline-block; }
-    nav ul li {
-      float: left; }
+    nav ul li a {
+      color: #000;
+      font-size: 1.3em; }
+    nav ul li a:hover {
+      background-color: #ddd; }
   nav .ulAnim * {
     box-sizing: border-box;
     transition: all 0.35s ease; }
@@ -481,36 +465,6 @@ nav {
   nav .ulAnim a:hover:after,
   nav .ulAnim .current a:after {
     height: 100%; }
-  @media screen and (max-width: 600px) {
-    nav .topnav ul li:not(:first-child) {
-      display: none; }
-    nav .topnav a.icon {
-      float: right;
-      display: block; }
-    nav body {
-      background-color: red; } }
-  @media screen and (max-width: 600px) {
-    nav .topnav.responsive {
-      position: relative; }
-    nav .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0; }
-    nav .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left; } }
-  nav .logo {
-    width: 150px; }
-  nav .site-links {
-    display: inline-block;
-    float: right;
-    width: auto; }
-  nav .btn {
-    border-radius: 4px;
-    padding: 10px 12px;
-    background-color: #F68935;
-    margin: 0 0.2em; }
 
 #page-events-main-image {
   background-image: url("../img/bg6.jpg");
@@ -955,6 +909,14 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #F68935;
   outline: 1px solid slategrey; }
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 700px; } }
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1100px; } }
 
 @media print {
   * {
