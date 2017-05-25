@@ -59,16 +59,16 @@ $(document).ready(function() {
 
       $(document).on("click","#toggle_calendar",function() {
 
-              if ($(this).text() == "Hide calendar") 
+              if ($("#toggle_calendar_icon").text() == "Hide calendar") 
               { 
-                 $(this).text("Show calendar");
-                 $(this).prepend(' <i class="fa fa-calendar fa" aria-hidden="true"></i>')
+                 $("#toggle_calendar_icon").text("Show calendar");
+                 //$(this).prepend(' <i class="fa fa-calendar fa" aria-hidden="true"></i>')
               
               } 
               else 
               { 
-                 $(this).text("Hide calendar");
-                 $(this).prepend(' <i class="fa fa-calendar fa" aria-hidden="true"></i>') 
+                 $("#toggle_calendar_icon").text("Hide calendar");
+                 //$(this).prepend(' <i class="fa fa-calendar fa" aria-hidden="true"></i>') 
               }; 
 
 
@@ -79,8 +79,8 @@ $(document).ready(function() {
             
       });
 
+      console.log("Hello");
 });
-
 
 })(jQuery, window, document);
 
