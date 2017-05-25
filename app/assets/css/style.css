@@ -23,6 +23,35 @@ body {
 body, html {
   min-height: 100vh; }
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.col1 {
+  -ms-flex: 1;
+      flex: 1; }
+
+.col2 {
+  -ms-flex: 2;
+      flex: 2; }
+
+.col3 {
+  -ms-flex: 3;
+      flex: 3; }
+
+.p05 {
+  padding: 0.5em; }
+
+.p1 {
+  padding: 1em; }
+
+a {
+  color: #ff8a30;
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -387,45 +416,26 @@ td,
 th {
   padding: 0; }
 
-#site-header {
-  position: relative; }
-
-.site-header {
-  padding: 0 1.25rem; }
+header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  header .logo {
+    width: 200px; }
 
 nav {
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */ }
-  nav .topnav {
-    background-color: #333;
-    overflow: hidden; }
-  nav #navigation {
-    position: relative;
-    display: inline-block;
-    float: right;
-    width: 100%; }
-  nav a {
-    display: block;
-    color: #000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    width: 100px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  nav ul li {
     float: left; }
-  nav a:hover {
-    background-color: #ddd;
-    color: black; }
-  nav .icon {
-    display: none; }
-  nav ul {
-    margin-bottom: 10px;
-    margin-top: 20px;
-    list-style: none;
-    float: right;
-    display: inline-block; }
-    nav ul li {
-      float: left; }
+    nav ul li a {
+      color: #000;
+      font-size: 1.3em; }
+    nav ul li a:hover {
+      background-color: #ddd; }
   nav .ulAnim * {
     box-sizing: border-box;
     transition: all 0.35s ease; }
@@ -455,36 +465,100 @@ nav {
   nav .ulAnim a:hover:after,
   nav .ulAnim .current a:after {
     height: 100%; }
-  @media screen and (max-width: 600px) {
-    nav .topnav ul li:not(:first-child) {
-      display: none; }
-    nav .topnav a.icon {
-      float: right;
-      display: block; }
-    nav body {
-      background-color: red; } }
-  @media screen and (max-width: 600px) {
-    nav .topnav.responsive {
-      position: relative; }
-    nav .topnav.responsive a.icon {
+
+#page-events-main-image {
+  background-image: url("../img/bg6.jpg");
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px; }
+
+.event-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  margin: 2em;
+  box-shadow: 4px 4px 20px #EDEDED; }
+  .event-wrapper .calendar-levels {
+    padding: 1em;
+    color: white; }
+  .event-wrapper .bgcMain {
+    background-color: #ff8a30; }
+  .event-wrapper .bgcSecondary {
+    background-color: #808080; }
+  .event-wrapper .bgcThird {
+    background-color: #422F85; }
+  .event-wrapper .event-image {
+    background-color: #EDEDED; }
+  .event-wrapper .event-content-wrapper {
+    padding: 1em;
+    position: relative; }
+    .event-wrapper .event-content-wrapper p {
+      line-height: 1.3;
+      font-size: 1.1em;
+      padding-left: 1em; }
+    .event-wrapper .event-content-wrapper .icon {
+      display: -ms-flexbox;
+      display: flex;
+      height: 100%;
+      width: 60px;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+    .event-wrapper .event-content-wrapper .event-content-inner > div:not(.speakers) {
+      padding-bottom: 0.7em; }
+    .event-wrapper .event-content-wrapper .event-content-inner .event-details .title {
+      padding-left: 0;
+      font-size: 24px; }
+    .event-wrapper .event-content-wrapper .event-content-inner .event-details .subtitle {
+      margin-bottom: 0.5em; }
+    .event-wrapper .event-content-wrapper .event-content-inner .event-details .description {
+      padding-left: 0;
+      line-height: 1.5;
+      margin-bottom: 1em; }
+    .event-wrapper .event-content-wrapper .event-content-inner .date-wrapper {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center; }
+      .event-wrapper .event-content-wrapper .event-content-inner .date-wrapper .date {
+        font-size: 1.5em; }
+        .event-wrapper .event-content-wrapper .event-content-inner .date-wrapper .date .dateTime {
+          padding-left: 0.5em;
+          font-weight: 500;
+          color: #808080; }
+        .event-wrapper .event-content-wrapper .event-content-inner .date-wrapper .date .time {
+          color: #ff8a30; }
+    .event-wrapper .event-content-wrapper .event-content-inner .event-location {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center; }
+      .event-wrapper .event-content-wrapper .event-content-inner .event-location .location {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: column;
+            flex-flow: column; }
+        .event-wrapper .event-content-wrapper .event-content-inner .event-location .location p.place {
+          color: #808080; }
+        .event-wrapper .event-content-wrapper .event-content-inner .event-location .location p.address {
+          color: #ff8a30; }
+    .event-wrapper .event-content-wrapper .event-content-inner .speakers {
+      height: 60px; }
+      .event-wrapper .event-content-wrapper .event-content-inner .speakers .speaker {
+        width: 60px;
+        margin-right: 0.5em; }
+    .event-wrapper .event-content-wrapper .event-content-inner .btnBuyTicket {
+      padding: 10px 0;
+      width: 200px;
       position: absolute;
-      right: 0;
-      top: 0; }
-    nav .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left; } }
-  nav .logo {
-    width: 150px; }
-  nav .site-links {
-    display: inline-block;
-    float: right;
-    width: auto; }
-  nav .btn {
-    border-radius: 4px;
-    padding: 10px 12px;
-    background-color: #F68935;
-    margin: 0 0.2em; }
+      bottom: 1em;
+      right: 1em; }
 
 .main p {
   font-size: 1.3em;
@@ -531,10 +605,6 @@ nav {
     .main .social-wrapper .social-icon a {
       padding: 0.4em; }
 
-.main .container {
-  max-width: 1100px;
-  margin: 0 auto; }
-
 .main article {
   display: block; }
 
@@ -568,12 +638,6 @@ nav {
 
 .main #intro-page {
   background: url("https://startacus.net/uploads/image/Web%20summit%20100000000.jpg");
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.main #intro-page-schedule {
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -652,7 +716,7 @@ nav {
 .main a {
   text-decoration: none;
   font-size: 22px;
-  color: black; }
+  color: #808080; }
 
 .main button:hover, .main a:hover {
   opacity: 0.7; }
@@ -729,52 +793,6 @@ nav {
     .main .section-title-inner .section-title-inner-content h2 {
       padding-bottom: 1em; }
 
-.main .event-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  margin: 2em;
-  box-shadow: 4px 4px 20px #EDEDED; }
-  .main .event-wrapper .side-calendar-medium {
-    padding: 1em;
-    background-color: #ff8a30;
-    color: white; }
-  .main .event-wrapper .side-calendar-beginner {
-    padding: 1em;
-    background-color: grey;
-    color: white; }
-  .main .event-wrapper .side-calendar-advanced {
-    padding: 1em;
-    background-color: #422F85;
-    color: white; }
-  .main .event-wrapper .event-image {
-    padding: 1em;
-    background-color: #EDEDED; }
-  .main .event-wrapper .event-content-inner {
-    padding: 1em; }
-  .main .event-wrapper .event-title {
-    font-size: 24px; }
-  .main .event-wrapper .icon {
-    float: left; }
-  .main .event-wrapper .event-content-inner {
-    width: 80%;
-    float: left;
-    max-height: 242px; }
-  .main .event-wrapper .side-button {
-    width: 16%;
-    float: right;
-    text-align: center;
-    margin-top: 9.9em;
-    margin-right: 20px;
-    border: 2px solid;
-    color: #ff8a30; }
-
-.main h2, .main p {
-  padding-left: 2em; }
-
 .main .team-wrapper-up {
   display: -ms-flexbox;
   display: flex;
@@ -783,28 +801,29 @@ nav {
   -ms-flex-pack: start;
       justify-content: flex-start; }
 
-.footer-wrapper {
+footer {
   background-color: #422F85;
-  font-size: 18px;
-  font-weight: 300;
-  padding: 4em; }
-  .footer-wrapper .footer-content {
+  color: white; }
+  footer .footer-wrapper {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-pack: start;
-        justify-content: flex-start; }
-  .footer-wrapper .footer-content p {
-    color: white; }
-  .footer-wrapper .footer-content .email {
-    color: #ff8a30;
-    text-decoration: none; }
-  .footer-wrapper .social-icon-footer p {
-    color: white;
-    margin-bottom: 1em; }
-  .footer-wrapper .social-icon-footer a {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 4em 0;
+    font-size: 1.2em; }
+    footer .footer-wrapper h3 {
+      font-size: 1.4em;
+      font-weight: 400;
+      padding-bottom: 1em;
+      color: #cccccc; }
+  footer .copyright {
+    width: 100%;
+    text-align: center;
     color: #ff8a30; }
+
+.btn {
+  padding: 10px 0;
+  width: 200px; }
 
 @font-face {
   font-family: 'Open Sans', sans-serif;
@@ -882,7 +901,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%; } }
 
 body::-webkit-scrollbar {
-  width: .5em; }
+  width: 1em; }
 
 body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
@@ -890,6 +909,14 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #F68935;
   outline: 1px solid slategrey; }
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 700px; } }
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1100px; } }
 
 @media print {
   * {
