@@ -16,6 +16,8 @@
     $(function () { $("#social-banner").load("components/social-banner.html"); });
     $(function () { $("#team").load("components/team.html"); });
     $(function () { $("#events").load("components/events.html"); });
+    $(function () { $("#calendar").load("components/calendar.html"); });
+
 
     $( window ).load(function() {
       $('.counter').each(function() {
@@ -43,6 +45,33 @@
     });
 
   });
+
+
+$(document).ready(function() {
+
+      $(document).on("click","#toggle_calendar",function() {
+
+              if ($(this).text() == "Hide calendar") 
+              { 
+                 $(this).text("Show calendar");
+                 $(this).prepend(' <i class="fa fa-calendar fa" aria-hidden="true"></i>')
+              
+              } 
+              else 
+              { 
+                 $(this).text("Hide calendar");
+                 $(this).prepend(' <i class="fa fa-calendar fa" aria-hidden="true"></i>') 
+              }; 
+
+
+              console.log("from the other side");
+              $( "#calendar_div" ).toggle( "slow", function() {
+
+              });
+            
+      });
+
+});
 
 
 })(jQuery, window, document);
