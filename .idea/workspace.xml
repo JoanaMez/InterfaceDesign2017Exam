@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2908141e-7ce3-41bf-af7e-8ab9bf78aa4b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/img/calendarWeek.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/img/calendar_image3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/calendar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/scss/modules/_calendar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/css/style.css" afterPath="$PROJECT_DIR$/app/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/css/style.min.css" afterPath="$PROJECT_DIR$/app/assets/css/style.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/js/scripts.js" afterPath="$PROJECT_DIR$/app/assets/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/js/scripts.min.js" afterPath="$PROJECT_DIR$/app/assets/js/scripts.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/events.html" afterPath="$PROJECT_DIR$/app/events.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/scripts.js" afterPath="$PROJECT_DIR$/src/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/style.scss" afterPath="$PROJECT_DIR$/src/scss/style.scss" />
     </list>
     <ignored path="InterfaceDesign Exam2017.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,6 +25,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/scripts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1407">
+              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="_main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/partials/_main.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -77,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_tickets.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_tickets.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/modules/_tickets.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1592">
@@ -119,7 +119,6 @@
         <option value="$PROJECT_DIR$/app/assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/app/components/team.html" />
         <option value="$PROJECT_DIR$/src/scss/partials/_header.scss" />
-        <option value="$PROJECT_DIR$/src/js/scripts.js" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/scss/modules/_buttons.scss" />
         <option value="$PROJECT_DIR$/src/scss/partials/_main.scss" />
@@ -130,6 +129,7 @@
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/components/tickets.html" />
         <option value="$PROJECT_DIR$/src/scss/modules/_tickets.scss" />
+        <option value="$PROJECT_DIR$/src/js/scripts.js" />
       </list>
     </option>
   </component>
@@ -180,7 +180,24 @@
     <panes>
       <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterfaceDesign Exam2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterfaceDesign Exam2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterfaceDesign Exam2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="Scope" />
     </panes>
@@ -272,25 +289,25 @@
       <workItem from="1494679128579" duration="58508000" />
       <workItem from="1495393489908" duration="28360000" />
       <workItem from="1495534847742" duration="7166000" />
-      <workItem from="1495719826125" duration="15561000" />
+      <workItem from="1495719826125" duration="15691000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109595000" />
+    <option name="totallyTimeSpent" value="109725000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="3866" height="2106" extended-state="6" />
+    <frame x="-13" y="-13" width="3866" height="2106" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19010417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19010417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.050520834" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -602,14 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/modules/_typography.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -704,6 +713,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1592">
           <caret line="98" column="19" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1407">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
           <folding />
         </state>
       </provider>
