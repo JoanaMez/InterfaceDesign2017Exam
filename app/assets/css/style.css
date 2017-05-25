@@ -23,6 +23,32 @@ body {
 body, html {
   min-height: 100vh; }
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.col1 {
+  -ms-flex: 1;
+      flex: 1; }
+
+.col2 {
+  -ms-flex: 2;
+      flex: 2; }
+
+.col3 {
+  -ms-flex: 3;
+      flex: 3; }
+
+.p05 {
+  padding: 0.5em; }
+
+.p1 {
+  padding: 1em; }
+
+a {
+  color: #ff8a30;
+  text-decoration: none; }
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -625,10 +651,6 @@ nav {
     .main .social-wrapper .social-icon a {
       padding: 0.4em; }
 
-.main .container {
-  max-width: 1100px;
-  margin: 0 auto; }
-
 .main article {
   display: block; }
 
@@ -825,27 +847,24 @@ nav {
   -ms-flex-pack: start;
       justify-content: flex-start; }
 
-.footer-wrapper {
+footer {
   background-color: #422F85;
-  font-size: 18px;
-  font-weight: 300;
-  padding: 4em; }
-  .footer-wrapper .footer-content {
+  color: white; }
+  footer .footer-wrapper {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-pack: start;
-        justify-content: flex-start; }
-  .footer-wrapper .footer-content p {
-    color: white; }
-  .footer-wrapper .footer-content .email {
-    color: #ff8a30;
-    text-decoration: none; }
-  .footer-wrapper .social-icon-footer p {
-    color: white;
-    margin-bottom: 1em; }
-  .footer-wrapper .social-icon-footer a {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 4em 0;
+    font-size: 1.2em; }
+    footer .footer-wrapper h3 {
+      font-size: 1.4em;
+      font-weight: 400;
+      padding-bottom: 1em;
+      color: #cccccc; }
+  footer .copyright {
+    width: 100%;
+    text-align: center;
     color: #ff8a30; }
 
 .btn {
