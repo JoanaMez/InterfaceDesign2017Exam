@@ -65,6 +65,9 @@
             }
           });
       });
+
+      checkForPage('events.html');
+      checkForPage('speakers.html');
     });
 
   });
@@ -87,6 +90,24 @@
     console.log('Hello');
   });
 
+  function checkForPage(page) {
+    console.log('checkForPage', page);
+    var scrollElements = $('.site-links a');
+
+    $.each(scrollElements, function (k, v) {
+      var el = $(v);
+      el.removeClass('active'); // just in case
+
+      var link = el.attr('href');
+
+      if (window.location.pathname.includes(link)) {
+        el.addClass('active');
+        console.log('adding to', el);
+        return;
+      }
+
+    });
+  }
 })(jQuery, window, document);
 
 
