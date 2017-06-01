@@ -1,64 +1,23 @@
 nav {
-  display: flex;
-  align-items: center;
   ul {
+    display: inline-flex;
     li {
-      float: left;
+      padding: 10px 20px; 
       a {
-        color: #000;
+        color: $colorPurple;
         font-size: 1.3em;
+        font-weight: 400;
+        letter-spacing: 1px;
       }
-      a:hover {
-        background-color: #ddd;
+      &:hover:not(.active) {
+        background-color: $colorGray;
       }
     }
   }
-  .ulAnim * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
-  }
-
-  .ulAnim a {
-    padding: 0 0.6em; //color: rgba(255, 255, 255, 0.5);
-    position: relative;
-    text-decoration: none;
-  }
-
-  .ulAnim a:before,
-  .ulAnim a:after {
-    width: 3px;
-    height: 0;
-    position: absolute;
-    content: '';
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
-    background-color: #ff8a30;
-  }
-
-  .ulAnim a:before {
-    top: 0;
-    right: 0;
-  }
-
-  .ulAnim a:after {
-    bottom: 0;
-    left: 0;
-  }
-
-  .ulAnim a:hover,
-  .ulAnim .current a {
-    color: #000;
-  }
-
-  .ulAnim a:hover:before,
-  .ulAnim .current a:before,
-  .ulAnim a:hover:after,
-  .ulAnim .current a:after {
-    height: 100%;
-  }
   .active{
-    border: 1px solid #ff8a30;
+    background-color: $colorOrange;
+    a{
+      color: white;
+    }
   }
 }

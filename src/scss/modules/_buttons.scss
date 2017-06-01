@@ -2,8 +2,8 @@
     padding: 10px 0;
     width: 200px;
 }
-.snip1582 {
-  background-color: #ff8a30;
+.btn-main {
+  background-color: $colorOrange;
   border: none;
   color: #ffffff;
   cursor: pointer;
@@ -20,8 +20,8 @@
   font-weight: 700;
 }
 
-.snip1582:before,
-.snip1582:after {
+.btn-main:before,
+.btn-main:after {
   border-color: transparent;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
@@ -33,29 +33,31 @@
   width: 24px;
 }
 
-.snip1582:before {
-  border-color: #ff8a30;
+.active:before,
+.btn-main:before {
+  border-color: $colorOrange;
   border-top-width: 2px;
   left: 0px;
   top: -5px;
 }
 
-.snip1582:after {
+.active:after,
+.btn-main:after {
   border-bottom-width: 2px;
-  border-color: #ff8a30;
+  border-color: $colorOrange;
   bottom: -5px;
   right: 0px;
 }
 
-.snip1582:hover,
-.snip1582.hover {
-  background-color: #ff8a30;
+.btn-main:hover,
+.btn-main.hover {
+  background-color: $colorOrange;
 }
 
-.snip1582:hover:before,
-.snip1582.hover:before,
-.snip1582:hover:after,
-.snip1582.hover:after {
+.btn-main:hover:before,
+.btn-main.hover:before,
+.btn-main:hover:after,
+.btn-main.hover:after {
   height: 100%;
   width: 100%;
 }

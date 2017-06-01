@@ -19,7 +19,7 @@
   }
 
   .social-section-banner {
-    background-color: $colorDarkPurple;
+    background-color: $colorPurple;
     a, p {
       color: white;
     }
@@ -86,7 +86,7 @@
   }
   #banner {
     //height: 15vh;
-    background-color: $backgroundColor-Grey;
+    background-color: $colorGrey;
     overflow: auto;
   }
   #intro-page {
@@ -112,7 +112,7 @@
   .item {
     h4 {
       font-size: 2em;
-      color: $colorDarkPurple;
+      color: $colorPurple;
     }
     .section-content-centered-inner {
       h1 {
@@ -190,7 +190,7 @@
   a {
     text-decoration: none;
     font-size: 22px;
-    //color: $grey;
+    //color: $colorHeaderGrey;
   }
 
   button:hover, a:hover {

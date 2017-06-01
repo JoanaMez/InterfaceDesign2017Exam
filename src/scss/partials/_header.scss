@@ -1,10 +1,21 @@
 header {
-  display: flex;
-  justify-content: space-between;
-  padding: 2.5em 0;
-
-  .logo{
+  background-color: #fff;
+  width: 100%;
+  div.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5em 0;
+  }
+  .logo img{
     width: 200px;
-    padding-top: .3em;
+  }
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  .main-nav{
+    padding: 0.5em 0;
   }
 }

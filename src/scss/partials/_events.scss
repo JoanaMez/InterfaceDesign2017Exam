@@ -24,10 +24,10 @@
     background-color: $colorOrange;
   }
   .bgcSecondary {
-    background-color: $grey;
+    background-color: $colorHeaderGrey;
   }
   .bgcThird {
-    background-color: $colorDarkPurple;
+    background-color: $colorPurple;
   }
   .event-image {
     background-color: #EDEDED;
@@ -74,7 +74,7 @@
           .dateTime {
             padding-left: 0.5em;
             font-weight: 500;
-            color: $grey;
+            color: $colorHeaderGrey;
           }
           .time {
             color: $colorOrange;
@@ -89,7 +89,7 @@
           flex-flow: column;
           p {
             &.place {
-              color: $grey;
+              color: $colorHeaderGrey;
             }
             &.address {
               color: $colorOrange;
