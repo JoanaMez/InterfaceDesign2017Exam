@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>About Event</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link href="//www.google-analytics.com" rel="dns-prefetch">
+    <link href="//ajax.googleapis.com" rel="dns-prefetch">
+    <link href="assets/css/style.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="assets/components/modernizr/modernizr.js"></script>
+    <script src="assets/components/jquery/jquery.min.js"></script>
+
+</head>
+<body>
+    
+    <main role="main">
+
+        <section id="tickets"></section>  
+
+    </main>
+
+<footer id="footer" class="section" role="contentinfo"></footer>
+
+</body>
+
+<script src="assets/js/scripts.js"></script>
+<script>
+    function initMap() {
+        var uluru = { lat: 55.705250, lng: 12.538180 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            title: "Event Location"
+        });
+    }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMTxvlfr-MXJAgjVyQTDrEV0__GcntcJM&callback=initMap">
+
+</script>
+
+</html>

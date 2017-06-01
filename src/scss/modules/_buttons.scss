@@ -20,6 +20,12 @@
   font-weight: 700;
 }
 
+.btn-small{
+  height: 2em;
+  padding: 0 20px;
+  font-size: 1em;
+}
+
 .btn-main:before,
 .btn-main:after {
   border-color: transparent;
@@ -61,3 +67,28 @@
   height: 100%;
   width: 100%;
 }
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: $colorOrange;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn-aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .button-item {
+    align-self: flex-start;
+    background-color: $colorOrange;
+    border-radius: 4px;
+    padding: 9px;
+  }
+}
+

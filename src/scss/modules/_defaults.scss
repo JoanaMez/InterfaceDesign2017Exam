@@ -38,9 +38,35 @@ body,html{
 a {
   color: $colorOrange;
   text-decoration: none;
+  cursor: pointer;
 }
 ul{
   list-style: none;
 }
+.text-center{
+  text-align: center;
+}
+
+.middle {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.flex-container{
+  display: flex;
+}
+.full-height{
+  height: 100vh;
+  position: relative;
+  .bottom{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+}
+
+
 
 

@@ -12,45 +12,25 @@
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Roboto', sans-serif;
 }
-//variables
-$colorTxtWhite:#fff;
-$colorTxtDarkGrey: #4e4e4e;
-$colorTxtDarkPurple: #422F85;
 
-
-$fontSizeMedium: 30px;
-$fontSizeSmall: 18px;
-$fontSizeBig: 48px;
+$fsBig: 4em;
+$fsMedium: 2em;
+$fsSmall: 1em;
 
 $txtAlign-center:center;
 
 .gallery{
-  color: $colorTxtDarkGrey;
-
+  color: $colorHeaderGrey;
 }
 .itemHead{
-  font-size: $fontSizeSmall ;
-  font-weight: normal;
+  font-size: $fsSmall;
 }
-.itemOutput{
-  font-size: $fontSizeMedium;
-  color: $colorTxtDarkPurple;
-}
-.section-title{
-  font-size: $fontSizeBig ;
-  color: $colorTxtDarkGrey;
 
-}
-.intro{
-  color:$colorTxtWhite ;
-}
-.txt-light{
-  color: $colorTxtWhite;
-}
-.centered{
-  width: 100%;
-  text-align: $txtAlign-center;
-}
 .section-title{
-  text-align:$txtAlign-center; ;
+  font-size: $fsBig;
+  color: $colorHeaderGrey;
+  text-align: center;
+  padding: 2em 0;
+  margin: 0;
+  text-transform: uppercase;
 }

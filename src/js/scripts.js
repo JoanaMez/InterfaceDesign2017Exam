@@ -42,6 +42,25 @@
       $('#calendar').load('components/calendar.html');
     });
 
+  function checkForPage(page) {
+    console.log('checkForPage', page);
+    var scrollElements = $('.site-links a');
+
+    $.each(scrollElements, function (k, v) {
+      var el = $(v);
+      el.removeClass('active'); // just in case
+
+      var link = el.attr('href');
+
+      if (window.location.pathname.includes(link)) {
+        el.addClass('active');
+        console.log('adding to', el);
+        return;
+      }
+
+    });
+  }
+
     $(window).load(function () {
       $('.counter').each(function () {
         var $this = $(this),
@@ -90,24 +109,6 @@
     console.log('Hello');
   });
 
-  function checkForPage(page) {
-    console.log('checkForPage', page);
-    var scrollElements = $('.site-links a');
-
-    $.each(scrollElements, function (k, v) {
-      var el = $(v);
-      el.removeClass('active'); // just in case
-
-      var link = el.attr('href');
-
-      if (window.location.pathname.includes(link)) {
-        el.addClass('active');
-        console.log('adding to', el);
-        return;
-      }
-
-    });
-  }
 })(jQuery, window, document);
 
 
