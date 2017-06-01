@@ -1,7 +1,18 @@
 #calendar_div {
-	color: red;
 position: relative;
-background-repeat: no-repeat;
-background-size: cover;
-height: 500px;
+}
+
+.googleCalendar{
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 55% ;
+}
+
+.googleCalendar iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
