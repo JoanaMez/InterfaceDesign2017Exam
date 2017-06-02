@@ -135,9 +135,21 @@
 
       });
 
+
+    });
     });
     console.log('Hello');
-  });
+  setTimeout(function () {
+    console.log("slick");
+    $('.partner-container').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true,
+
+    });
+  }, 1000);
 
 })(jQuery, window, document);
 

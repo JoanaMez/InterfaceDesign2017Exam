@@ -14,33 +14,41 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.fullpage/2.9.4/jquery.fullpage.min.css">
   <script src="assets/components/modernizr/modernizr.js"></script>
   <script src="assets/components/jquery/jquery.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
 
 </head>
 <body>
 
   <header id="site-header" class="navbar-fixed" role="header"></header>
 
-  <main role="main">
+  <main id="fullpage" role="main">
 
     <section id="intro-page" class="full-height">
       <div id="intro-page-color-bg"></div>
       <div id="social-banner" class="bottom"></div>
     </section>
 
+    <h1 class="section-title">Upcoming Events</h1>
+    <section id="events" class="wow bounceInUp"></section>
+    <button type="button" class="btn-main block-center" role="button">
+      <a href="events.html">View all</a>
+    </button>
 
-    <section class="full-height">
+
+    <section id="section-about" class="full-height">
       <div id="about"></div>
       <div id="banner" class="bottom"></div>
     </section>
 
 
-    <h1 class="section-title">Upcoming Events</h1>
-    <section id="events"></section>
-    <button type="button" class="btn-main block-center" role="button">
-     <a href="events.html">View all</a>
-    </button>
+
 
     <!--<section id="team"></section>-->
 
@@ -59,7 +67,8 @@
 
   <footer id="footer" class="section" role="contentinfo"></footer>
 
-</body>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
 <script src="assets/js/scripts.js"></script>
 <script>
 
@@ -80,4 +89,7 @@
 <script
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMTxvlfr-MXJAgjVyQTDrEV0__GcntcJM&callback=initMap">
 </script>
+
+
+</body>
 </html>

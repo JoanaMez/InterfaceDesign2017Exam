@@ -50,7 +50,7 @@ main {
       .social-wrapper {
         display: flex;
         justify-content: space-between;
-        align-items: center;  
+        align-items: center;
         padding: 1em 0;
         .subscribe-wrapper{
           display: flex;
@@ -77,17 +77,54 @@ main {
     }
   }
 
+  #section-about{
+    background-color: $colorOrange;
+    color: white;
+
+    .about-content{
+
+      text-align: center;
+      p{
+        margin: 0 auto;
+        max-width: 80%;
+        margin-bottom: 15px;
+        font-size: 1.6em;
+        padding-bottom: 2em;
+      }
+      .icons-about{
+        display: flex;
+        align-items: center;
+      }
+      h1{
+        text-transform: uppercase;
+      }
+
+    }
+  }
+
   #about{
+
     .section-title-inner-content {
       padding: 0 3em;
       h2 {
         padding-bottom: 1em;
-        color: $colorPurple;
+        color: white;
       }
       p {
         line-height: 1.5;
+        font-size: 1.5em;
+
       }
     }
+  }
+  .section-title-white{
+    font-size: 4em;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin: 0;
+    text-transform: uppercase;
+    //padding-bottom: 2em;
   }
 
   #banner {
@@ -127,12 +164,12 @@ main {
   }
 
   #tickets{
-    
+
   }
 
   #sponsors{
     .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
       max-width: 300px;
       margin: 2em;
       text-align: center;
@@ -165,28 +202,39 @@ main {
       align-content: flex-end;
     }
 
-    .sponsor-container {
-      padding: 0 16px;
-      align-content: center;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-align-items: center;
-      align-items: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      /* You can set flex-wrap and flex-direction individually */
-      -webkit-flex-direction: row;
-      flex-direction: row;
-      -webkit-flex-wrap: wrap;
-      flex-wrap: wrap;
-      /* Or do it all in one line with flex flow */
-      -webkit-flex-flow: row wrap;
-      flex-flow: row wrap;
-      /* tweak the where items line up on the row */
-      /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
-      -webkit-align-content: flex-end;
-      align-content: flex-end;
+    #sponsors{
+
+      .sponsor-container {
+        padding: 0 16px;
+        align-content: center;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        /* You can set flex-wrap and flex-direction individually */
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        /* Or do it all in one line with flex flow */
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        /* tweak the where items line up on the row */
+        /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+        -webkit-align-content: flex-end;
+        align-content: flex-end;
+      }
     }
+  .sponser-description{
+    margin: 0 auto;
+    max-width: 80%;
+    margin-bottom: 15px;
+    font-size: 1.6em;
+    padding-bottom: 2em;
+  }
+
 
     .partner-container {
       padding: 0 16px;
@@ -243,6 +291,17 @@ main {
     flex-direction: row;
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
+  }
+
+  .flex-container {
+    .fa{
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .slick-arrow{
+    display: none !important;
   }
 
 }
