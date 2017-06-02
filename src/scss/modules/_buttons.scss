@@ -2,6 +2,7 @@ button {
   padding: 10px 0;
   margin: 0;
   border: none;
+  outline: none;
   font-size: 1em;
   line-height: 1em;
   text-align: center;
@@ -66,15 +67,17 @@ button {
   width: 100%;
 }
 
-.btn-aligner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .button-item {
-    align-self: flex-start;
+// Events.html
+.filter-button-group {
+  button {
+    background-color: $colorGrey;
+    font-weight: 400;
+    color: $colorHeaderGrey;
+  }
+  .active {
     background-color: $colorOrange;
-    border-radius: 4px;
-    padding: 9px;
+    color: white;
   }
 }
+
 

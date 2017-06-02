@@ -24,11 +24,19 @@
 
         <header id="site-header" class="container" role="header"></header>
 
-        <main class="main" role="main" id="main-wrapper">
+        <main class="main" role="main">
 
             <section id="page-events-main-image"></section>
 
             <h1 class="section-title">Events</h1>
+            
+            <div class="filter-button-group text-center">
+                <button class="btn-small active" data-filter="*">All</button>
+                <button class="btn-small" data-filter=".beginner">beginner</button>
+                <button class="btn-small" data-filter=".advanced">advanced</button>
+                <button class="btn-small" data-filter=".free">free</button>
+            </div>
+            
             <section id="calendar"></section><!-- #calendar-->
             <section id="events"></section><!-- #events-->
             <section id="events2"></section><!-- #events-->
@@ -38,7 +46,8 @@
         <footer id="footer" class="section" role="contentinfo"></footer>
 
     </body>
-
+<!--<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>-->
+<script src="assets/js/isotope.pkgd.min.js"></script>
 <script src="assets/js/scripts.js"></script>
 
 </html>

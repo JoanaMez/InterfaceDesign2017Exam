@@ -42,6 +42,36 @@
       $('#calendar').load('components/calendar.html');
     });
 
+    // // FILTERING events page
+
+    // // init Isotope
+    // var $grid = $('.grid').isotope({
+    //   // options
+    // });
+    // // filter items on button click
+    // $('.filter-button-group').on('click', 'button', function () {
+    //   var filterValue = $(this).attr('data-filter');
+    //   $grid.isotope({ filter: filterValue });
+    // });
+
+    $('.filter-button-group button').on('click', function (e) {
+      e.preventDefault();
+
+      $('.filter-button-group button').removeClass('active');
+      $(this).addClass('active');
+
+      var filter = $(this).attr('data-filter');
+
+      $('.grid').isotope({
+        itemSelector: '.grid-item',
+        filter: filter
+      });
+    });
+
+    // filter .metal items
+    // $grid.isotope({ filter: '.beginner' });
+    // $grid.isotope({ filter: '.advanced' });
+
   function checkForPage(page) {
     console.log('checkForPage', page);
     var scrollElements = $('.site-links a');
