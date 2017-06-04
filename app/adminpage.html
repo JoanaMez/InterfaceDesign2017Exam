@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="no-js">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Admin login</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link href="//www.google-analytics.com" rel="dns-prefetch">
+        <link href="//ajax.googleapis.com" rel="dns-prefetch">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="assets/components/modernizr/modernizr.js"></script>
+        <script src="assets/components/jquery/jquery.min.js"></script>
+
+    </head>
+
+    <body id="admin-page-wrapper">
+
+    <div id="editing-panel">
+
+
+       <div id="editing-panel-head">
+
+       	<div class="editing-heads" id="events-editing-head">
+	    	<i class="fa fa-calendar-o fa-5x" aria-hidden="true"></i>
+	    	<h1>EVENTS</h1>
+    	</div> 
+
+    	<div class="editing-heads" id="sponsors-editing-head">
+	    	<i class="fa fa-handshake-o fa-5x" aria-hidden="true"></i>
+	    	<h1>SPONSORS</h1>
+    	</div> 
+
+    	<div class="editing-heads" id="admins-editing-head">
+	    	<i class="fa fa-user fa-5x" aria-hidden="true"></i>
+	    	<h1>ADMINS</h1>
+    	</div> 
+
+
+   		</div>
+
+
+   <nav id="nav-admin" >
+
+    <ul>
+      <li class="admin-menu-item active-for-edit">
+        <p id="events-editing">Events</p>
+      </li>
+      <li class="admin-menu-item">
+        <p id="sponsors-editing">Sponsors</p>
+      </li>
+      <li class="admin-menu-item">
+        <p id="admins-editing">Admins</p>
+      </li>
+    </ul>
+
+  </nav>
+
+  <div class="input-new" id="input-new-event">	
+  	 <h2>Create new event:</h2>
+        <input type="text" placeholder="tittle"/>
+        <input type="text" placeholder="place"/>
+        <input type="text" placeholder="price"/>
+        <input type="text" placeholder="date"/>
+        <input type="text" placeholder="picture url"/>
+        <textarea placeholder="description" name="description" cols="40" rows="5"></textarea>
+        <br>
+        <button>ADD</button>
+  </div>
+
+    <div class="input-new" id="input-new-admin">	
+  	 <h2>Add new admin:</h2>
+        <input type="text" placeholder="name"/>
+        <input type="text" placeholder="surname"/>
+        <input type="text" placeholder="login"/>
+        <input type="text" placeholder="password"/>
+        <input type="text" placeholder="position"/>
+        <input type="text" placeholder="e-mail"/>
+        <button>ADD</button>
+  </div>
+
+    <div class="input-new" id="input-new-sponsor">	
+  	 <h2>Add new sponsor:</h2>
+        <input type="text" placeholder="name"/>
+        <input type="text" placeholder="picture url"/>
+        <br>
+        <button>ADD</button>
+  </div>
+
+
+  </div>
+
+  <div id="content-dispaly-admin">
+  	
+
+  </div>
+
+
+
+
+        
+
+
+    </body>
+<!--<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>-->
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+
+</html>

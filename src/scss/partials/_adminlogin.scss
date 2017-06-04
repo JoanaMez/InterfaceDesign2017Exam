@@ -11,9 +11,9 @@
 	background-color: white;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
-  text-align: center;
+  	margin: 0 auto 100px;
+  	padding: 30px 45px 45px;
+  	text-align: center;
 
 
   button{
@@ -28,7 +28,7 @@
   	transition: all 0.3 ease;
   }
 
-  button:hover,.form button:active,.form button:focus {
+  button:hover,button:active,button:focus {
   background: #f47a1d;
  }
 
@@ -49,5 +49,11 @@
   	color: #422F85;
   }
 
+    a:hover,a:active,a:focus {
+  	color: #2d205b;
+ }
+
 }
+
+
 

@@ -1,0 +1,142 @@
+#editing-panel {
+    background-color: #e0e0e0;
+    min-height: 100%;
+    margin-top: 0;
+    box-shadow: 3px 1px 4px 0px rgba(168, 168, 168, 1);
+}
+#editing-panel-head {
+    text-align: center;
+    color: $colorPurple;
+    h1 {
+        margin-top: 10px;
+    }
+    i {
+        margin-top: 15px;
+    }
+}
+#nav-admin {
+    ul {
+        display: inline-flex;
+        background-color: white;
+        border-right: $colorOrange solid;
+        border-left: $colorOrange solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            padding: 10px 20px;
+            width: 100%;
+            p {
+                color: $colorPurple;
+                font-size: 1.3em;
+                font-weight: 400;
+                letter-spacing: 1px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.input-new {
+    text-align: center;
+    h2 {
+        color: $colorPurple;
+    }
+    margin: 15px 15px 15px 15px;
+    button {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        min-width: 8em;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3 ease;
+        cursor: pointer;
+        width: 100%;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3 ease;
+    }
+    button:hover,
+    button:active,
+    button:focus {
+        background: #f47a1d;
+    }
+    textarea {
+        min-height: 5em !important;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    input,
+    textarea {
+        height: 2.5em;
+        background: white;
+        color: black !important;
+        outline: 0;
+        border: 0;
+        margin: 15px 0 0;
+        padding: 6px;
+        font-size: 14px;
+        width: 100%;
+    }
+}
+.active-for-edit {
+    background-color: $colorOrange !important;
+    p {
+        color: white !important;
+    }
+}
+#sponsors-editing-head,
+#admins-editing-head,
+#input-new-admin,
+#input-new-sponsor {
+    display: none;
+}
+#content-dispaly-admin {
+    background-color: red;
+    width: 75%;
+    min-height: 100%;
+    float: right;
+}
+#admin-page-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 481px) {
+    #admin-page-wrapper {
+        flex-direction: column;
+    }
+    #content-dispaly-admin {
+        background-color: yellow;
+        width: 100%;
+    }
+    #editing-panel {
+        max-width: 100%;
+    }
+}
+@media (min-width: 481px) {
+    #admin-page-wrapper {
+        flex-direction: column;
+    }
+    #content-dispaly-admin {
+        width: 100%;
+    }
+    #editing-panel {
+        max-width: 100%;
+    }
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+    #content-dispaly-admin {
+        width: 50%;
+    }
+    #editing-panel {
+        width: 50%;
+    }
+}
+@media (min-width: 961px) {
+    #content-dispaly-admin {
+        background-color: red;
+        width: 75%;
+    }
+    #editing-panel {
+        width: 25%;
+    }
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
