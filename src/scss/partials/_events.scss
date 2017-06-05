@@ -36,7 +36,7 @@
   flex-direction: row;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  margin: 2em;
+  margin: 1em 0;
   border: 2px solid $colorGrey;
   .calendar-levels{
     padding: 1em;
@@ -115,6 +115,10 @@
 
 #view-all-events{
   padding: 2em 0 4em;
+}
+
+#events2{
+  padding-bottom: 4em;
 }
 
 
