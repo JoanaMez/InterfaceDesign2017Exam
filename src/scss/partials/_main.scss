@@ -27,6 +27,8 @@ main {
       .main-event-info{
         line-height: 1.1;
         .main-event-image{
+            max-width: 50%;
+            margin: 0 auto;
         }
         h2{
           font-size: 3em;
@@ -225,14 +227,62 @@ main {
 
   // Speakers page
 
-  .nameTag {
-    background-color: $colorOrange;
+  #page-speakers-main-image {
+    background-image: url("../img/bg6.jpg");
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
 
+  .card-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 18px;
+    flex-wrap: wrap;
+    padding-bottom: 4em;
+    .card{
+      width: 33%;
+      padding: 0.5em;
+      .card-img-wrapper {
+        position: relative;
+        p{
+          position: absolute;
+          bottom: 0;
+          font-size: 2em;
+          color: white;
+          font-weight: 500;
+          padding-left: 10px;
+          padding-bottom: 10px;
+        }
+      }
+      .card-content{
+        // border: 2px solid $colorGrey;
+        padding: 30px 10px 0;
+        .skills p{
+          font-weight: 500;
+          padding-bottom: 20px;
+          text-transform: uppercase;
+        }
+        .description p{
+          line-height: 1.3;
+          padding-bottom: 20px;
+        }
+        .social-wrapper{
+          display: flex;
+          justify-content: flex-end;
+          border-bottom: 2px solid $colorGrey;
+          padding: 1em 0;
+          a{
+            padding-right: 10px;
+            color: $colorHeaderGrey;
+          }
+          a:hover{
+            color: $colorOrange;
+          }
+        }
+        
+      }
+    }
   }
 
 
