@@ -77,54 +77,31 @@ main {
     }
   }
 
-  #section-about{
+  #about{
     background-color: $colorOrange;
     color: white;
-
-    .about-content{
-
-      text-align: center;
-      p{
-        margin: 0 auto;
-        max-width: 80%;
-        margin-bottom: 15px;
-        font-size: 1.6em;
-        padding-bottom: 2em;
-      }
-      .icons-about{
-        display: flex;
-        align-items: center;
-      }
-      h1{
-        text-transform: uppercase;
-      }
-
+    .section-title{
+      color: white;
+      padding-bottom: 1em;
     }
-  }
-
-  #about{
-
+    h2{
+      padding: 3em 0;
+      font-size: 2em;
+      text-transform: uppercase;
+    }
     .section-title-inner-content {
       padding: 0 3em;
-      h2 {
-        padding-bottom: 1em;
-        color: white;
+
+      h3 {
+        padding-bottom: 2em;
+        text-transform: uppercase;
       }
       p {
         line-height: 1.5;
-        font-size: 1.5em;
+        font-size: 1.3em;
 
       }
     }
-  }
-  .section-title-white{
-    font-size: 4em;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    margin: 0;
-    text-transform: uppercase;
-    //padding-bottom: 2em;
   }
 
   #banner {
