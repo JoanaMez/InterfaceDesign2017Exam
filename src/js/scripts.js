@@ -4,7 +4,12 @@
 
   $(function () {
 
+    //////////////////////////////////////////////////////////////////////
     // index.html
+    //////////////////////////////////////////////////////////////////////
+
+    // Loading components
+
     $(function () {
       $('#site-header').load('components/header.html');
     });
@@ -39,20 +44,31 @@
       $('#events').load('components/events.html');
     });
     $(function () {
+      $('#events2').load('components/events2.html');
+    });
+    $(function () {
       $('#calendar').load('components/calendar.html');
     });
 
-    // // FILTERING events page
+    // Partners images scrolling
 
-    // // init Isotope
-    // var $grid = $('.grid').isotope({
-    //   // options
-    // });
-    // // filter items on button click
-    // $('.filter-button-group').on('click', 'button', function () {
-    //   var filterValue = $(this).attr('data-filter');
-    //   $grid.isotope({ filter: filterValue });
-    // });
+    setTimeout(function () {
+      console.log("slick");
+      $('.partner-container').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: false,
+      });
+    }, 1000);
+
+
+    //////////////////////////////////////////////////////////////////////
+    // events.html
+    //////////////////////////////////////////////////////////////////////
+
+    // FILTERING events page
 
     $('.filter-button-group button').on('click', function (e) {
       e.preventDefault();
@@ -68,28 +84,37 @@
       });
     });
 
-    // filter .metal items
-    // $grid.isotope({ filter: '.beginner' });
-    // $grid.isotope({ filter: '.advanced' });
-
-  function checkForPage(page) {
-    console.log('checkForPage', page);
-    var scrollElements = $('.site-links a');
-
-    $.each(scrollElements, function (k, v) {
-      var el = $(v);
-      el.removeClass('active'); // just in case
-
-      var link = el.attr('href');
-
-      if (window.location.pathname.includes(link)) {
-        el.addClass('active');
-        console.log('adding to', el);
-        return;
+    // Calendar toggle
+    $(document).on('click', '#toggle_calendar', function () {
+      if ($('#toggle_calendar_icon').text() === 'Hide calendar') {
+        $('#toggle_calendar_icon').text('Show calendar');
+      } else {
+        $('#toggle_calendar_icon').text('Hide calendar');
       }
-
+      $('#calendar_div').toggle('slow');
     });
-  }
+
+
+    // activate page ???
+
+    function checkForPage(page) {
+      console.log('checkForPage', page);
+      var scrollElements = $('.site-links a');
+
+      $.each(scrollElements, function (k, v) {
+        var el = $(v);
+        el.removeClass('active'); // just in case
+
+        var link = el.attr('href');
+
+        if (window.location.pathname.includes(link)) {
+          el.addClass('active');
+          console.log('adding to', el);
+          return;
+        }
+
+      });
+    }
 
     $(window).load(function () {
       $('.counter').each(function () {
@@ -99,9 +124,9 @@
         $this.text('0');
 
         console.log(countTo);
-        $({countNum: $this.text()}).animate({
-            countNum: countTo
-          },
+        $({ countNum: $this.text() }).animate({
+          countNum: countTo
+        },
           {
             duration: 2500,
             easing: 'linear',
@@ -122,34 +147,8 @@
   });
 
 
-  $(document).ready(function () {
-    $(document).on('click', '#toggle_calendar', function () {
-      if ($('#toggle_calendar_icon').text() === 'Hide calendar') {
-        $('#toggle_calendar_icon').text('Show calendar');
-      }
-      else {
-        $('#toggle_calendar_icon').text('Hide calendar');
-      }
-      console.log('from the other side');
-      $('#calendar_div').toggle('slow', function () {
-
-      });
 
 
-    });
-    });
-    console.log('Hello');
-  setTimeout(function () {
-    console.log("slick");
-    $('.partner-container').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      dots: false,
-
-    });
-  }, 1000);
 
 })(jQuery, window, document);
 
