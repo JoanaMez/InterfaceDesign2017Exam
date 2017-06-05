@@ -106,38 +106,17 @@ main {
 
   #banner {
     background-color: $colorGrey;
-    overflow: auto;
-    .gallery {
-      margin: 4em 0;
-      padding: 0;
-      list-style: none;
-      overflow: visible;
-      display: block;
-      width: 100%;
-      float: left;
+    .section-title{
+      padding-bottom: 1em;
     }
-    .gallery .item {
-      width: 20%;
-      float: left;
-      box-sizing: border-box;
-      padding-right: 0.3125rem;
-      padding-left: 0.3125rem;
-    }
-    p {
-      color: white;
-    }
-    .item {
-      h4 {
-        font-size: 2em;
-        color: $colorPurple;
-      }
-      .section-content-centered-inner {
-        h1 {
-          color: $colorHeaderGrey;
+    .partner-container{
+      padding: 2em 0;
+      .card{
+        img{
+          width: 150px;
         }
       }
     }
-
   }
 
   #tickets{
@@ -145,12 +124,15 @@ main {
   }
 
   #sponsors{
+    .section-title{
+      padding-bottom: 1em;
+    }
     .card {
-
-      max-width: 300px;
-      margin: 2em;
-      text-align: center;
+      margin: 0 2em;
       display: inline-block;
+      img{
+        width: 150px;
+      }
       .card-content {
         padding-bottom: 1em;
       }
@@ -205,11 +187,7 @@ main {
       }
     }
   .sponser-description{
-    margin: 0 auto;
-    max-width: 80%;
-    margin-bottom: 15px;
     font-size: 1.6em;
-    padding-bottom: 2em;
   }
 
 

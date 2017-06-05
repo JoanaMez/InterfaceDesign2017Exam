@@ -10,12 +10,14 @@ footer{
       font-size: 1.4em;
       font-weight: 400;
       padding-bottom: 1em;
-      color: #cccccc;
+      color: $colorGrey;
     }  
+    a{
+      color: $colorOrange;      
+    }
   }
   .copyright{
     width: 100%;
-    text-align: center;
     color: $colorOrange;    
   }
 }
