@@ -165,3 +165,47 @@
         width: 4em;
          text-transform: uppercase;
  }
+
+ #sponsors-content-admin, #admins-content-admin {
+    display: none;
+
+ }
+
+ #admins-content-admin{
+    margin: 2em 1em 1em 1em;
+ }
+
+ #sponsors-content-admin, #admins-content-admin{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    
+ }
+
+ .sponsor-card-admin {
+        width: 300px;
+        margin: 1em;
+
+        img {
+            border: solid #e0e0e0;
+            border-width: 2px;
+        }
+
+        button{
+            width: 100%;
+        }
+    }
+
+.admin-description {
+     margin-top: 0.5em;
+    border: solid #e0e0e0;
+    border-width: 2px;
+    padding: 2.5em;
+    font-size: 1.3em;
+    font-weight: 400;
+
+    b {
+        font-weight: 800;
+    }
+}

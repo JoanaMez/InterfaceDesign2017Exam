@@ -94,7 +94,7 @@
       $('#calendar_div').toggle('slow');
     });
 
-    
+
       ///ADMIN PAGE ANIMATIONS///
     
       $(document).on('click', '.admin-menu-item p', function () {
@@ -113,6 +113,10 @@
 
       $('.input-new').hide();
       $('#input-new-admin').show();
+
+      $('#sponsors-content-admin').hide();
+      $('#event-content-admin').hide();
+      $('#admins-content-admin').show();
       });
 
       $(document).on('click', '#events-editing', function () {
@@ -123,6 +127,9 @@
 
       $('.input-new').hide();
       $('#input-new-event').show();
+
+      $('.content-item-admin').hide();
+      $('#event-content-admin').show();
       });
 
       $(document).on('click', '#sponsors-editing', function () {
@@ -133,6 +140,9 @@
 
       $('.input-new').hide();
       $('#input-new-sponsor').show();
+
+      $('.content-item-admin').hide();
+      $('#sponsors-content-admin').show();
       
       });
 
