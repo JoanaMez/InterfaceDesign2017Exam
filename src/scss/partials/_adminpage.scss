@@ -92,9 +92,13 @@
     width: 75%;
     min-height: 100%;
     float: right;
+    margin-right:1em;
+    margin-left: 1em;
+
 }
 #admin-page-wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 @media (max-width: 481px) {
@@ -128,6 +132,12 @@
     #editing-panel {
         width: 50%;
     }
+
+    #admin-page-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 }
 @media (min-width: 961px) {
     #content-dispaly-admin {
@@ -136,5 +146,22 @@
     #editing-panel {
         width: 25%;
     }
+
+    #admin-page-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
     /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
+
+ .btn-edit{
+    width: 4em;
+     text-transform: uppercase;
+     background-color: $colorPurple;
+ }
+
+ .btn-delete {
+        width: 4em;
+         text-transform: uppercase;
+ }
