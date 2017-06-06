@@ -78,6 +78,56 @@
     $(document).on('click', '.event-content-inner button', function () {
       window.location = "single-event-page.html";
     });
+      ///ADMIN PAGE ANIMATIONS///
+    
+      $(document).on('click', '.admin-menu-item p', function () {
+
+      $('.admin-menu-item').removeClass('active-for-edit');
+      $(this).parent().addClass('active-for-edit');
+
+      });
+
+
+      $(document).on('click', '#admins-editing', function () {
+
+      console.log("hello admin");
+      $('.editing-heads').hide();
+      $('#admins-editing-head').show();
+
+      $('.input-new').hide();
+      $('#input-new-admin').show();
+
+      $('#sponsors-content-admin').hide();
+      $('#event-content-admin').hide();
+      $('#admins-content-admin').show();
+      });
+
+      $(document).on('click', '#events-editing', function () {
+
+      console.log("hello event");
+      $('.editing-heads').hide();
+      $('#events-editing-head').show();
+
+      $('.input-new').hide();
+      $('#input-new-event').show();
+
+      $('.content-item-admin').hide();
+      $('#event-content-admin').show();
+      });
+
+      $(document).on('click', '#sponsors-editing', function () {
+
+      console.log("hello sponsor");
+      $('.editing-heads').hide();
+      $('#sponsors-editing-head').show();
+
+      $('.input-new').hide();
+      $('#input-new-sponsor').show();
+
+      $('.content-item-admin').hide();
+      $('#sponsors-content-admin').show();
+      
+      });
 
 
     // activate page ???
