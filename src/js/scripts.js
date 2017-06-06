@@ -181,6 +181,8 @@
         console.log("click");
         swal("Newsletter was sent to your email")
       });
+
+      $( "#accordion" ).accordion();
     });
 
   });

@@ -280,7 +280,7 @@ main {
             color: $colorOrange;
           }
         }
-        
+
       }
     }
   }
@@ -306,6 +306,11 @@ main {
 
   .slick-arrow{
     display: none !important;
+  }
+
+  .ui-state-active{
+    border: 5px solid $colorOrange;
+    background:$colorOrange ;
   }
 
 }
