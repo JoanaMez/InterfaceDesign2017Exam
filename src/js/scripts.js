@@ -10,19 +10,19 @@
 
     // Loading components
 
-      $('#site-header').load('components/header.html');
-      $('#intro-page-color-bg').load('components/intro-page.html');
-      $('#banner').load('components/banner.html');
-      $('#about').load('components/about.html');
-      $('#speakers').load('components/speakers.html');
-      $('#tickets').load('components/tickets.html');
-      $('#sponsors').load('components/sponsors.html');
-      $('#footer').load('components/footer.html');
-      $('#social-banner').load('components/social-banner.html');
-      $('#team').load('components/team.html');
-      $('#events').load('components/events.html');
-      $('#events2').load('components/events2.html');
-      $('#calendar').load('components/calendar.html');
+    $('#site-header').load('components/header.html');
+    $('#intro-page-color-bg').load('components/intro-page.html');
+    $('#banner').load('components/banner.html');
+    $('#about').load('components/about.html');
+    $('#speakers').load('components/speakers.html');
+    $('#tickets').load('components/tickets.html');
+    $('#sponsors').load('components/sponsors.html');
+    $('#footer').load('components/footer.html');
+    $('#social-banner').load('components/social-banner.html');
+    $('#team').load('components/team.html');
+    $('#events').load('components/events.html');
+    $('#events2').load('components/events2.html');
+    $('#calendar').load('components/calendar.html');
 
     // Partners images scrolling
 
@@ -37,7 +37,7 @@
           dots: false,
         });
 
-      } catch (e){
+      } catch (e) {
 
       }
     }, 5000);
@@ -78,17 +78,17 @@
     $(document).on('click', '.event-content-inner button', function () {
       window.location = "single-event-page.html";
     });
-      ///ADMIN PAGE ANIMATIONS///
-    
-      $(document).on('click', '.admin-menu-item p', function () {
+    ///ADMIN PAGE ANIMATIONS///
+
+    $(document).on('click', '.admin-menu-item p', function () {
 
       $('.admin-menu-item').removeClass('active-for-edit');
       $(this).parent().addClass('active-for-edit');
 
-      });
+    });
 
 
-      $(document).on('click', '#admins-editing', function () {
+    $(document).on('click', '#admins-editing', function () {
 
       console.log("hello admin");
       $('.editing-heads').hide();
@@ -100,9 +100,9 @@
       $('#sponsors-content-admin').hide();
       $('#event-content-admin').hide();
       $('#admins-content-admin').show();
-      });
+    });
 
-      $(document).on('click', '#events-editing', function () {
+    $(document).on('click', '#events-editing', function () {
 
       console.log("hello event");
       $('.editing-heads').hide();
@@ -113,9 +113,9 @@
 
       $('.content-item-admin').hide();
       $('#event-content-admin').show();
-      });
+    });
 
-      $(document).on('click', '#sponsors-editing', function () {
+    $(document).on('click', '#sponsors-editing', function () {
 
       console.log("hello sponsor");
       $('.editing-heads').hide();
@@ -126,8 +126,8 @@
 
       $('.content-item-admin').hide();
       $('#sponsors-content-admin').show();
-      
-      });
+
+    });
 
 
     // activate page ???
@@ -159,9 +159,9 @@
         $this.text('0');
 
         console.log(countTo);
-        $({ countNum: $this.text() }).animate({
-          countNum: countTo
-        },
+        $({countNum: $this.text()}).animate({
+            countNum: countTo
+          },
           {
             duration: 2500,
             easing: 'linear',
@@ -177,15 +177,13 @@
 
       checkForPage('events.html');
       checkForPage('speakers.html');
-      $( ".btn-subscribe" ).on( "click", function() {
+      $(".btn-subscribe").on("click", function () {
         console.log("click");
-        swal("Newsletter was sent to your email")      });
+        swal("Newsletter was sent to your email")
+      });
     });
 
   });
-
-
-
 
 
 })(jQuery, window, document);
