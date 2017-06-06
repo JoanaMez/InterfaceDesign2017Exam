@@ -10,58 +10,37 @@
 
     // Loading components
 
-    $(function () {
       $('#site-header').load('components/header.html');
-    });
-    $(function () {
       $('#intro-page-color-bg').load('components/intro-page.html');
-    });
-    $(function () {
       $('#banner').load('components/banner.html');
-    });
-    $(function () {
       $('#about').load('components/about.html');
-    });
-    $(function () {
       $('#speakers').load('components/speakers.html');
-    });
-    $(function () {
       $('#tickets').load('components/tickets.html');
-    });
-    $(function () {
       $('#sponsors').load('components/sponsors.html');
-    });
-    $(function () {
       $('#footer').load('components/footer.html');
-    });
-    $(function () {
       $('#social-banner').load('components/social-banner.html');
-    });
-    $(function () {
       $('#team').load('components/team.html');
-    });
-    $(function () {
       $('#events').load('components/events.html');
-    });
-    $(function () {
       $('#events2').load('components/events2.html');
-    });
-    $(function () {
       $('#calendar').load('components/calendar.html');
-    });
 
     // Partners images scrolling
 
     setTimeout(function () {
       console.log("slick");
-      $('.partner-container').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        dots: false,
-      });
-    }, 1000);
+      try {
+        $('.partner-container').slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          dots: false,
+        });
+
+      } catch (e){
+
+      }
+    }, 5000);
 
 
     //////////////////////////////////////////////////////////////////////
@@ -92,6 +71,12 @@
         $('#toggle_calendar_icon').text('Hide calendar');
       }
       $('#calendar_div').toggle('slow');
+    });
+
+
+    // evt btn
+    $(document).on('click', '.event-content-inner button', function () {
+      window.location = "single-event-page.html";
     });
 
 
@@ -142,6 +127,9 @@
 
       checkForPage('events.html');
       checkForPage('speakers.html');
+      $( ".btn-subscribe" ).on( "click", function() {
+        console.log("click");
+        swal("Newsletter was sent to your email")      });
     });
 
   });
