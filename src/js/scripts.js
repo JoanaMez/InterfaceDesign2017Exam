@@ -162,7 +162,7 @@
           $("#sponsor-pic").val('');
 
           $("#sponsors-content-admin").prepend('<div id="microsoft" class="sponsor-card-admin"><img src="assets/img/microsoft.png"><button class="btn-edit sponsor-edit">Edit</button><button class="btn-delete">Delete</button></div>');
-          $("#btn-cancel").hide();  
+          $("#btn-cancel").hide();
 
         });
 
@@ -173,7 +173,7 @@
           $("#sponsor-pic").val('assets/img/microsoft.png');
           $('<button id="btn-cancel">CANCEL</button>').insertAfter( "#btn-add-sponsor" );
           $('<button id="btn-change">CHANGE</button>').insertAfter( "#btn-add-sponsor" );
-          $("#btn-add-sponsor").hide();      
+          $("#btn-add-sponsor").hide();
         });
 
           $(document).on('click', '#btn-cancel', function (){

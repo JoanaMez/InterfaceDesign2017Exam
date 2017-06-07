@@ -1,97 +1,21 @@
-@media only screen and (max-width:320px) {
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (min-width: 1140px) {
   .container {
-    max-width: 320px;
+    max-width: 1024px;
   }
-}
-@media only screen and (max-width:480px) {
-    .container {
-      max-width: 480px;
-    }
-
-    header .logo img {
-      width: 100px;
-    }
-
-    nav ul li {
-      padding: 5px;
-    }
-
-    main #intro-page #intro-page-color-bg .main-event-info .main-event-image {
-      max-width: 30%
-    }
-    main #intro-page #intro-page-color-bg .main-event-info h2 {
-      font-size: 2em;
-      padding: 0 1em;
-    }
-
-    main #intro-page #intro-page-color-bg .main-event-info h3 {
-      font-size: 1.5em;
-    }
-
-    main #intro-page #intro-page-color-bg .main-event-info p {
-      font-size: 1.3em;
-      color: #4e4e4e;
-    }
-
-    main #intro-page #social-banner .social-wrapper,
-    main #intro-page #social-banner .social-wrapper .subscribe-wrapper {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .section-title{
-      font-size: 2em;
-    }
-
-    .event-wrapper .event-image {
-      width: 0;
-    }
-
-    .btnBuyTicket {
-      bottom: 1em;
-      right: 1em;
-    }
-
-    .flex-container {
-      flex-wrap: wrap;
-    }
-
-    .full-height {
-      height: 100%;
-    }
-
-    #intro-page.full-height {
-      height: 100vh;
-    }
-
-    main #about .section-title-inner-content {
-      padding: 2em 1em;
-    }
-
-    .card {
-      width: 33%;
-    }
-
-    main #location #map {
-      min-height: 350px;
-    }
-
-    main .card-container .card {
-      width: 100%;
-    }
-
-
-}
-@media only screen and (max-width:768px) {
-  .container {
-    max-width: 700px;
+  main #sponsors .card img {
+    width: 120px;
   }
+
 }
-@media only screen and (max-width:1024px) {
+
+@media only screen and (max-width: 1024px) {
   .container {
     max-width: 900px;
   }
-  .section-title{
+  .section-title {
     padding: 1em 0 0.75em;
   }
   .title-description {
@@ -111,19 +35,118 @@
     width: 120px;
   }
 }
-@media only screen and (min-width:1140px) {
+
+@media only screen and (max-width: 768px) {
   .container {
-    max-width: 1024px;
+    max-width: 700px;
   }
-  main #sponsors .card img {
-    width: 120px;
+  .social-wrapper, .subscribe-wrapper, .social-icon {
+    display: block !important;
+    width: 100%;
+    text-align: center;
+  }
+
+  .speakers-page {
+    .card-container {
+      .card {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+
+  header .logo img {
+    width: 100px;
+  }
+
+  nav ul li {
+    padding: 5px;
+  }
+
+  main #intro-page #intro-page-color-bg .main-event-info .main-event-image {
+    max-width: 30%
+  }
+  main #intro-page #intro-page-color-bg .main-event-info h2 {
+    font-size: 2em;
+    padding: 0 1em;
+  }
+
+  main #intro-page #intro-page-color-bg .main-event-info h3 {
+    font-size: 1.5em;
+  }
+
+  main #intro-page #intro-page-color-bg .main-event-info p {
+    font-size: 1.3em;
+    color: #4e4e4e;
+  }
+
+  main #intro-page #social-banner .social-wrapper,
+  main #intro-page #social-banner .social-wrapper .subscribe-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section-title {
+    font-size: 2em;
+  }
+
+  .event-wrapper .event-image {
+    width: 0;
+  }
+
+  .btnBuyTicket {
+    bottom: 1em;
+    right: 1em;
+  }
+
+  .flex-container {
+    flex-wrap: wrap;
+  }
+
+  .full-height {
+    min-height: 100%;
+  }
+
+  #intro-page.full-height {
+    min-height: 100vh;
+  }
+
+  main #about .section-title-inner-content {
+    padding: 2em 1em;
+  }
+
+  .card {
+    width: 33%;
+  }
+
+  main #location #map {
+    min-height: 350px;
+  }
+
+  .speakers-page {
+    .card-container {
+      .card {
+        width: 100%;
+      }
+    }
   }
 
 }
-@media only screen and (max-width:1280px) {
+
+@media only screen and (max-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
 }
+
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
 }
+
 // @mixin for-size($range) {
 //   $phone-upper-boundary: 600px;
 //   $tablet-portrait-upper-boundary: 900px;
