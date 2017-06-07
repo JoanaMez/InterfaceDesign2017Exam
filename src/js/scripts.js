@@ -252,6 +252,12 @@
       }catch (e){
 
       }
+
+      try{
+       // do admin page stuff here
+      }catch (e){
+
+      }
     });
 
   });

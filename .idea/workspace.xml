@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2908141e-7ce3-41bf-af7e-8ab9bf78aa4b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/adminpage.html" afterPath="$PROJECT_DIR$/app/adminpage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/scripts.js" afterPath="$PROJECT_DIR$/src/js/scripts.js" />
     </list>
     <ignored path="InterfaceDesign Exam2017.iws" />
@@ -27,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1361">
-              <caret line="250" column="10" selection-start-line="250" selection-start-column="10" selection-end-line="250" selection-end-column="10" />
+            <state relative-caret-position="1356">
+              <caret line="256" column="34" selection-start-line="256" selection-start-column="34" selection-end-line="256" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -111,7 +109,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminpage.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="adminpage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/adminpage.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -189,8 +187,8 @@
         <option value="$PROJECT_DIR$/app/events.html" />
         <option value="$PROJECT_DIR$/src/scss/partials/_main.scss" />
         <option value="$PROJECT_DIR$/app/single-event-page.html" />
-        <option value="$PROJECT_DIR$/src/js/scripts.js" />
         <option value="$PROJECT_DIR$/app/adminpage.html" />
+        <option value="$PROJECT_DIR$/src/js/scripts.js" />
       </list>
     </option>
   </component>
@@ -460,12 +458,12 @@
       <workItem from="1495719826125" duration="16659000" />
       <workItem from="1496425137667" duration="10463000" />
       <workItem from="1496779476304" duration="10149000" />
-      <workItem from="1496847875655" duration="799000" />
+      <workItem from="1496847875655" duration="903000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132104000" />
+    <option name="totallyTimeSpent" value="132208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3866" height="2106" extended-state="6" />
@@ -858,18 +856,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1361">
-          <caret line="250" column="10" selection-start-line="250" selection-start-column="10" selection-end-line="250" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/adminpage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1356">
+          <caret line="256" column="34" selection-start-line="256" selection-start-column="34" selection-end-line="256" selection-end-column="34" />
           <folding />
         </state>
       </provider>
