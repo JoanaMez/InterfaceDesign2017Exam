@@ -1,107 +1,185 @@
-// @media only screen and (max-width:320px) {
-//   .container {
-//     max-width: 320px;
-//   }
-// }
-// @media only screen and (max-width:480px) {
-//     .container {
-//       max-width: 480px;
-//     }
-// }
-// @media only screen and (max-width:768px) {
-//   .container {
-//     max-width: 700px;
-//   }
-// }
-// @media only screen and (max-width:1024px) {
-//   .container {
-//     max-width: 900px;
-//   }
-//   .section-title{
-//     padding: 1em 0 0.75em;
-//   }
-//   .title-description {
-//     width: 80%;
-//   }
-//   main #about h2 {
-//     padding: 2em 0 1em;
-//   }
-//   main #about .section-title-inner-content {
-//     padding: 0 1em;
-//   }
-//   main #sponsors .section-title,
-//   main #banner .section-title {
-//     padding-bottom: 0em;
-//   }
-//   main #sponsors .card img {
-//     width: 120px;
-//   }
-// }
-// @media only screen and (min-width:1140px) {
-//   .container {
-//     max-width: 1024px;
-//   }
-// }
-// @media only screen and (max-width:1280px) {
-// }
-// @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-// }
-@mixin for-size($range) {
-  $phone-upper-boundary: 600px;
-  $tablet-portrait-upper-boundary: 900px;
-  $tablet-landscape-upper-boundary: 1200px;
-  $desktop-upper-boundary: 1800px;
-  @if $range==phone-only {
-    @media (max-width: #{$phone-upper-boundary - 1}) {
-      @content;
-    }
-  }
-  @else if $range==tablet-portrait-up {
-    @media (min-width: $phone-upper-boundary) {
-      .container {
-        max-width: 800px;
-      }
-      .section-title {
-        padding: 1em 0 0.75em;
-      }
-      .title-description {
-        width: 80%;
-      }
-      main #about h2 {
-        padding: 2em 0 1em;
-      }
-      main #about .section-title-inner-content {
-        padding: 0 1em;
-      }
-      main #sponsors .section-title,
-      main #banner .section-title {
-        padding-bottom: 0em;
-      }
-      main #sponsors .card img {
-        width: 120px;
-      }
-    }
-  }
-  @else if $range==tablet-landscape-up {
-    @media (min-width: $tablet-portrait-upper-boundary) {}
-  }
-  @else if $range==desktop-up {
-    @media (min-width: $tablet-landscape-upper-boundary) {
-      @content;
-    }
-  }
-  @else if $range==big-desktop-up {
-    @media (min-width: $desktop-upper-boundary) {
-      @content;
-    }
+@media only screen and (max-width:320px) {
+  .container {
+    max-width: 320px;
   }
 }
+@media only screen and (max-width:480px) {
+    .container {
+      max-width: 480px;
+    }
 
-// usage
-.my-box {
-  padding: 10px;
-  @include for-size(desktop-up) {
-    padding: 20px;
+    header .logo img {
+      width: 100px;
+    }
+
+    nav ul li {
+      padding: 5px;
+    }
+
+    main #intro-page #intro-page-color-bg .main-event-info .main-event-image {
+      max-width: 30%
+    }
+    main #intro-page #intro-page-color-bg .main-event-info h2 {
+      font-size: 2em;
+      padding: 0 1em;
+    }
+
+    main #intro-page #intro-page-color-bg .main-event-info h3 {
+      font-size: 1.5em;
+    }
+
+    main #intro-page #intro-page-color-bg .main-event-info p {
+      font-size: 1.3em;
+      color: #4e4e4e;
+    }
+
+    main #intro-page #social-banner .social-wrapper,
+    main #intro-page #social-banner .social-wrapper .subscribe-wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .section-title{
+      font-size: 2em;
+    }
+
+    .event-wrapper .event-image {
+      width: 0;
+    }
+
+    .btnBuyTicket {
+      bottom: 1em;
+      right: 1em;
+    }
+
+    .flex-container {
+      flex-wrap: wrap;
+    }
+
+    .full-height {
+      height: 100%;
+    }
+
+    #intro-page.full-height {
+      height: 100vh;
+    }
+
+    main #about .section-title-inner-content {
+      padding: 2em 1em;
+    }
+
+    .card {
+      width: 33%;
+    }
+
+    main #location #map {
+      min-height: 350px;
+    }
+
+    main .card-container .card {
+      width: 100%;
+    }
+
+
+}
+@media only screen and (max-width:768px) {
+  .container {
+    max-width: 700px;
   }
 }
+@media only screen and (max-width:1024px) {
+  .container {
+    max-width: 900px;
+  }
+  .section-title{
+    padding: 1em 0 0.75em;
+  }
+  .title-description {
+    width: 80%;
+  }
+  main #about h2 {
+    padding: 2em 0 1em;
+  }
+  main #about .section-title-inner-content {
+    padding: 0 1em;
+  }
+  main #sponsors .section-title,
+  main #banner .section-title {
+    padding-bottom: 0em;
+  }
+  main #sponsors .card img {
+    width: 120px;
+  }
+}
+@media only screen and (min-width:1140px) {
+  .container {
+    max-width: 1024px;
+  }
+  main #sponsors .card img {
+    width: 120px;
+  }
+
+}
+@media only screen and (max-width:1280px) {
+}
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+}
+// @mixin for-size($range) {
+//   $phone-upper-boundary: 600px;
+//   $tablet-portrait-upper-boundary: 900px;
+//   $tablet-landscape-upper-boundary: 1200px;
+//   $desktop-upper-boundary: 1800px;
+//   @if $range==phone-only {
+//     @media (max-width: #{$phone-upper-boundary - 1}) {
+//       @content;
+//     }
+//   }
+//   @else if $range==tablet-portrait-up {
+//     @media (min-width: $phone-upper-boundary) {
+//       .container {
+//         max-width: 800px;
+//       }
+//       .section-title {
+//         padding: 1em 0 0.75em;
+//       }
+//       .title-description {
+//         width: 80%;
+//       }
+//       main #about h2 {
+//         padding: 2em 0 1em;
+//       }
+//       main #about .section-title-inner-content {
+//         padding: 0 1em;
+//       }
+//       main #sponsors .section-title,
+//       main #banner .section-title {
+//         padding-bottom: 0em;
+//       }
+//       main #sponsors .card img {
+//         width: 120px;
+//       }
+//     }
+//   }
+//   @else if $range==tablet-landscape-up {
+//     @media (min-width: $tablet-portrait-upper-boundary) {}
+//   }
+//   @else if $range==desktop-up {
+//     @media (min-width: $tablet-landscape-upper-boundary) {
+//       @content;
+//     }
+//   }
+//   @else if $range==big-desktop-up {
+//     @media (min-width: $desktop-upper-boundary) {
+//       @content;
+//     }
+//   }
+// }
+
+// // usage
+// .my-box {
+//   padding: 10px;
+//   @include for-size(desktop-up) {
+//     padding: 20px;
+//   }
+// }
 
