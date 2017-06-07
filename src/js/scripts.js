@@ -255,8 +255,10 @@
 
       try{
        // do admin page stuff here
-      }catch (e){
 
+        // swal("Newsletter was sent to your email")
+      }catch (e){
+        console.error(e);
       }
     });
 
