@@ -136,7 +136,6 @@
 
       if (rightName == usernameInput && rightPass == passwordInput ) {
         window.location.replace("http://localhost:3000/adminpage.html");
-        $('#content-dispaly-admin').append('<div>Hello admin1! <a>LOGOUT</a></div>')
       }
 
       else {
@@ -148,6 +147,23 @@
 
 
     /////////////////////////////////////////////////////////
+
+    ///////////// DELETING BY ADMIN ////////////////////////
+
+
+     $(".btn-delete").on("click", function () {
+
+        $(this).parent().remove();
+
+      });
+
+
+
+
+
+
+
+    ////////////////////////////////////////////////////////
 
 
     // activate page ???

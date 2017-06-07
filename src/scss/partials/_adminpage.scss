@@ -155,13 +155,13 @@
 }
 
  .btn-edit{
-    width: 4em;
+    width: 6em;
      text-transform: uppercase;
      background-color: $colorPurple;
  }
 
  .btn-delete {
-        width: 4em;
+        width: 8em;
          text-transform: uppercase;
  }
 
@@ -177,7 +177,7 @@
  #sponsors-content-admin, #admins-content-admin{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 
     
  }
