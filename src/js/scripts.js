@@ -161,7 +161,7 @@
           $("#sponsor-name").val('');
           $("#sponsor-pic").val('');
 
-          $("#sponsors-content-admin").prepend('<div class="sponsor-card-admin"><img src="assets/img/microsoft.png"><button class="btn-edit sponsor-edit">Edit</button><button class="btn-delete">Delete</button></div>');
+          $("#sponsors-content-admin").prepend('<div id="microsoft" class="sponsor-card-admin"><img src="assets/img/microsoft.png"><button class="btn-edit sponsor-edit">Edit</button><button class="btn-delete">Delete</button></div>');
           $("#btn-cancel").hide();  
         });
 
@@ -171,15 +171,23 @@
           $("#sponsor-name").val('Microsoft');
           $("#sponsor-pic").val('assets/img/microsoft.png');
           $('<button id="btn-cancel">CANCEL</button>').insertAfter( "#btn-add-sponsor" );
+          $('<button id="btn-change">CHANGE</button>').insertAfter( "#btn-add-sponsor" );
+          $("#btn-add-sponsor").hide();      
         });
-
 
           $(document).on('click', '#btn-cancel', function (){
           $("#sponsor-name").val('');
           $("#sponsor-pic").val('');
           $(this).hide();
+          $("#btn-change").hide();
+          $("#btn-add-sponsor").show();
+        });
 
 
+        $(document).on('click', '#btn-change', function (){
+          $("#btn-change, #btn-cancel" ).hide();
+          $("#btn-add-sponsor").show();
+          $("#microsoft").replaceWith('<div class="sponsor-card-admin"><img src="assets/img/amazon.png"><button class="btn-edit sponsor-edit">Edit</button><button class="btn-delete">Delete</button></div>');
         });
 
     ////////////////////////////////////////////////////////
