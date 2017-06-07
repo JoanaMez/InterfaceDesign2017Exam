@@ -87,17 +87,17 @@
 
     });
 
-    function loadEvents() { 
+    function loadEvents() {
       $('.editing-heads, .input-new, .content-item-admin, #sponsors-content-admin').hide();
       $('#events-editing-head, #input-new-event, #event-content-admin').show();
     }
 
-    function loadAdmins() { 
+    function loadAdmins() {
       $('.editing-heads, .input-new, #sponsors-content-admin, #event-content-admin').hide();
       $('#admins-editing-head, #input-new-admin, #admins-content-admin').show();
     }
 
-    function loadSponsors() { 
+    function loadSponsors() {
       $('.editing-heads, .input-new, .content-item-admin').hide();
       $('#sponsors-editing-head, #input-new-sponsor, #sponsors-content-admin').show();
     }
@@ -142,7 +142,7 @@
         $('#login-box').append('<h4>Username or password is not valid</h4>');
       };
 
-      
+
     }
 
 
@@ -162,7 +162,7 @@
           $("#sponsor-pic").val('');
 
           $("#sponsors-content-admin").prepend('<div class="sponsor-card-admin"><img src="assets/img/microsoft.png"><button class="btn-edit sponsor-edit">Edit</button><button class="btn-delete">Delete</button></div>');
-          $("#btn-cancel").hide();  
+          $("#btn-cancel").hide();
         });
 
     ///////////// EDITING SPONSORS BY ADMIN ////////////////////////
@@ -237,17 +237,21 @@
         swal("Newsletter was sent to your email")
       });
 
-      $( "#accordion" ).accordion();
+      try{
+        $( "#accordion" ).accordion();
 
-      $("#accordion img").click(function () {
-        swal({
-          title: "Sweet!",
-          text: "mpor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." +
-          " At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata u",
-          imageUrl: "assets/img/39507.jpg"
-        });
+        $("#accordion img").click(function () {
+          swal({
+            title: "Sweet!",
+            text: "mpor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." +
+            " At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata u",
+            imageUrl: "assets/img/39507.jpg"
+          });
 
-      })
+        })
+      }catch (e){
+
+      }
     });
 
   });
