@@ -150,18 +150,37 @@
 
     ///////////// DELETING BY ADMIN ////////////////////////
 
+         $(document).on('click', '.btn-delete', function (){
+            $(this).parent().hide('slow');
+        });
 
-     $(".btn-delete").on("click", function () {
+    ///////////// ADDING SPONSORS BY ADMIN ////////////////////////
+        $("#btn-add-sponsor").on("click", function () {
 
-        $(this).parent().remove();
+          console.log("add-sponsor");
+          $("#sponsor-name").val('');
+          $("#sponsor-pic").val('');
 
-      });
+          $("#sponsors-content-admin").prepend('<div class="sponsor-card-admin"><img src="assets/img/microsoft.png"><button class="btn-edit sponsor-edit">Edit</button><button class="btn-delete">Delete</button></div>');
+          $("#btn-cancel").hide();  
+        });
+
+    ///////////// EDITING SPONSORS BY ADMIN ////////////////////////
+          $(document).on('click', '.sponsor-edit', function (){
+          console.log("edit-sponsor");
+          $("#sponsor-name").val('Microsoft');
+          $("#sponsor-pic").val('assets/img/microsoft.png');
+          $('<button id="btn-cancel">CANCEL</button>').insertAfter( "#btn-add-sponsor" );
+        });
 
 
+          $(document).on('click', '#btn-cancel', function (){
+          $("#sponsor-name").val('');
+          $("#sponsor-pic").val('');
+          $(this).hide();
 
 
-
-
+        });
 
     ////////////////////////////////////////////////////////
 

@@ -43,7 +43,7 @@
     }
     margin: 15px 15px 15px 15px;
     button {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         margin-top: 15px;
         min-width: 8em;
         -webkit-transition: all 0.3 ease;
@@ -207,4 +207,9 @@
     b {
         font-weight: 800;
     }
+}
+
+#btn-cancel{
+    background-color: $colorPurple;
+    margin-top: 0em !important;
 }
