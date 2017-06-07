@@ -2,6 +2,7 @@
 	background: url('../img/bg5.jpg') no-repeat center center;
 	background-size: cover;
 	#login-box {
+		text-align: center;
 		background-color: white;
 		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 		max-width: 360px;
@@ -15,6 +16,12 @@
 			padding: 6px;
 			font-size: 14px;
 			width: 100%;
+		}
+		a{
+			color: $colorPurple;
+		}
+		h4{
+			color: #b71c1c;
 		}
 		button {
 			margin-bottom: 15px;
@@ -32,4 +39,14 @@
 			background: #f47a1d;
 		}
 	}
+}
+
+#logoutLink {
+	margin-left: 1em;
+	color: $colorPurple;
+	float: right;
+}
+
+#login-header{
+	margin: 1em;
 }

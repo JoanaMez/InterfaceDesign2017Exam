@@ -119,6 +119,37 @@
     });
 
 
+    ///////////////// ADMIN LOGIN ///////////////////////////
+
+    $('#btn-login').on('click', function () {
+      adminLogin();
+    });
+
+    function adminLogin () {
+
+      var rightName = "admin1";
+      var rightPass = "123";
+      var usernameInput = $('#admin-username').val();
+      var passwordInput = $('#admin-password').val();
+
+      console.log(usernameInput+passwordInput);
+
+      if (rightName == usernameInput && rightPass == passwordInput ) {
+        window.location.replace("http://localhost:3000/adminpage.html");
+        $('#content-dispaly-admin').append('<div>Hello admin1! <a>LOGOUT</a></div>')
+      }
+
+      else {
+        $('#login-box').append('<h4>Username or password is not valid</h4>');
+      };
+
+      
+    }
+
+
+    /////////////////////////////////////////////////////////
+
+
     // activate page ???
 
     function checkForPage(page) {
