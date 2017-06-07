@@ -87,46 +87,35 @@
 
     });
 
+    function loadEvents() { 
+      $('.editing-heads, .input-new, .content-item-admin, #sponsors-content-admin').hide();
+      $('#events-editing-head, #input-new-event, #event-content-admin').show();
+    }
 
-    $(document).on('click', '#admins-editing', function () {
+    function loadAdmins() { 
+      $('.editing-heads, .input-new, #sponsors-content-admin, #event-content-admin').hide();
+      $('#admins-editing-head, #input-new-admin, #admins-content-admin').show();
+    }
 
-      console.log("hello admin");
-      $('.editing-heads').hide();
-      $('#admins-editing-head').show();
+    function loadSponsors() { 
+      $('.editing-heads, .input-new, .content-item-admin').hide();
+      $('#sponsors-editing-head, #input-new-sponsor, #sponsors-content-admin').show();
+    }
 
-      $('.input-new').hide();
-      $('#input-new-admin').show();
-
-      $('#sponsors-content-admin').hide();
-      $('#event-content-admin').hide();
-      $('#admins-content-admin').show();
+    $(document).ready(function () {
+      loadEvents();
     });
 
-    $(document).on('click', '#events-editing', function () {
-
-      console.log("hello event");
-      $('.editing-heads').hide();
-      $('#events-editing-head').show();
-
-      $('.input-new').hide();
-      $('#input-new-event').show();
-
-      $('.content-item-admin').hide();
-      $('#event-content-admin').show();
+    $('#events-editing').on('click', function () {
+      loadEvents();
     });
 
-    $(document).on('click', '#sponsors-editing', function () {
+    $('#sponsors-editing').on('click', function () {
+      loadSponsors();
+    });
 
-      console.log("hello sponsor");
-      $('.editing-heads').hide();
-      $('#sponsors-editing-head').show();
-
-      $('.input-new').hide();
-      $('#input-new-sponsor').show();
-
-      $('.content-item-admin').hide();
-      $('#sponsors-content-admin').show();
-
+    $('#admins-editing').on('click', function () {
+      loadAdmins();
     });
 
 

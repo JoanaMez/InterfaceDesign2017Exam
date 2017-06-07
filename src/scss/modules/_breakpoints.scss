@@ -1,27 +1,107 @@
-@media only screen and (min-width:320px) {
+// @media only screen and (max-width:320px) {
+//   .container {
+//     max-width: 320px;
+//   }
+// }
+// @media only screen and (max-width:480px) {
+//     .container {
+//       max-width: 480px;
+//     }
+// }
+// @media only screen and (max-width:768px) {
+//   .container {
+//     max-width: 700px;
+//   }
+// }
+// @media only screen and (max-width:1024px) {
+//   .container {
+//     max-width: 900px;
+//   }
+//   .section-title{
+//     padding: 1em 0 0.75em;
+//   }
+//   .title-description {
+//     width: 80%;
+//   }
+//   main #about h2 {
+//     padding: 2em 0 1em;
+//   }
+//   main #about .section-title-inner-content {
+//     padding: 0 1em;
+//   }
+//   main #sponsors .section-title,
+//   main #banner .section-title {
+//     padding-bottom: 0em;
+//   }
+//   main #sponsors .card img {
+//     width: 120px;
+//   }
+// }
+// @media only screen and (min-width:1140px) {
+//   .container {
+//     max-width: 1024px;
+//   }
+// }
+// @media only screen and (max-width:1280px) {
+// }
+// @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+// }
+@mixin for-size($range) {
+  $phone-upper-boundary: 600px;
+  $tablet-portrait-upper-boundary: 900px;
+  $tablet-landscape-upper-boundary: 1200px;
+  $desktop-upper-boundary: 1800px;
+  @if $range==phone-only {
+    @media (max-width: #{$phone-upper-boundary - 1}) {
+      @content;
+    }
+  }
+  @else if $range==tablet-portrait-up {
+    @media (min-width: $phone-upper-boundary) {
+      .container {
+        max-width: 800px;
+      }
+      .section-title {
+        padding: 1em 0 0.75em;
+      }
+      .title-description {
+        width: 80%;
+      }
+      main #about h2 {
+        padding: 2em 0 1em;
+      }
+      main #about .section-title-inner-content {
+        padding: 0 1em;
+      }
+      main #sponsors .section-title,
+      main #banner .section-title {
+        padding-bottom: 0em;
+      }
+      main #sponsors .card img {
+        width: 120px;
+      }
+    }
+  }
+  @else if $range==tablet-landscape-up {
+    @media (min-width: $tablet-portrait-upper-boundary) {}
+  }
+  @else if $range==desktop-up {
+    @media (min-width: $tablet-landscape-upper-boundary) {
+      @content;
+    }
+  }
+  @else if $range==big-desktop-up {
+    @media (min-width: $desktop-upper-boundary) {
+      @content;
+    }
+  }
+}
 
-}
-@media only screen and (min-width:480px) {
-
-}
-@media only screen and (min-width:768px) {
-.container {
-  max-width: 700px;
-}
-
-}
-@media only screen and (min-width:1024px) {
-.container {
-  max-width: 1100px;
+// usage
+.my-box {
+  padding: 10px;
+  @include for-size(desktop-up) {
+    padding: 20px;
+  }
 }
 
-}
-@media only screen and (min-width:1140px) {
-
-}
-@media only screen and (min-width:1280px) {
-
-}
-@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-
-}
